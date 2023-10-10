@@ -1,0 +1,16 @@
+---
+title: "Closing Session"
+subtitle: "Week 9"
+author: "David Schweizer"
+date: "Dec 06, 2023"
+date-format: long
+institute: "University of Mannheim"
+format: 
+  revealjs:
+    theme: simple
+    slide-number: c/t #< collapsed/total
+    footer: "Applied Methods of Social Sciences | Winter semester 2023/24 | University of Innsbruck"
+editor: visual
+---
+
+# TBA

@@ -1,0 +1,18 @@
+---
+title: "No Session"
+subtitle: "Week 4"
+author: "David Schweizer"
+date: "Nov 01, 2023"
+date-format: long
+institute: "University of Mannheim"
+format: 
+  revealjs:
+    theme: simple
+    slide-number: c/t #< collapsed/total
+    footer: "Applied Methods of Social Sciences | Winter semester 2023/24 | University of Innsbruck"
+editor: visual
+---
+
+# No session this week!
+
+*Due to public holiday*

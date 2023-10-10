@@ -1,0 +1,275 @@
+---
+title: "Intro Session"
+subtitle: "Week 1"
+author: "David Schweizer"
+date: "Oct 11, 2023"
+date-format: long
+institute: "University of Mannheim"
+format: 
+  revealjs:
+    theme: simple
+    slide-number: c/t #< collapsed/total
+    footer: "Applied Methods of Social Sciences | Winter semester 2023/24 | University of Innsbruck"
+editor: visual
+---
+
+## Plan for today
+
+-   Introduction round: Getting to know each other
+-   Course content and schedule
+-   Your expectations
+-   My expectations & course requirements
+-   Motivation for the course
+
+## Introduction round
+
+-   I'll go first. A few words about me
+
+-   You're next. *Breakout rooms: Groups of 3-4*
+
+    -   Introduce yourselves to your classmates
+    -   What is your name? Where are you from? What do you study? Why Innsbruck? Did you pick up a new hobby recently?
+
+-   *Back to the plenum*
+
+    -   In a few sentences, introduce someone of your group to the plenum
+
+## About me
+
+-   PhD candidate in Political Science & research associate at the University of Mannheim
+
+-   External lecturer at University of Innsbruck since this semester
+
+-   Focus on party competition and intra-party politics
+
+-   Academic Background:
+
+    -   M.A. Political Science (LMU)
+    -   B.Sc. Economics (Goethe University)
+
+-   New hobby: mountaineering
+
+# Your turn
+
+*Breakout rooms*
+
+# Introduce your group
+
+*In the plenum*
+
+## Applied methods?
+
+<iframe src="https://app.sli.do/event/tn95QeYqrXg3nk7PxeziKW" height="100%" width="100%" frameBorder="0" style="min-height: 560px;" title="Slido">
+
+</iframe>
+
+## Learning outcome
+
+***From research idea to presenting results***
+
+-   Finding a research question
+
+-   How to conduct a literature review
+
+-   Building theory
+
+-   What is a suitbale research design?
+
+-   Collecting & analyzing data
+
+-   Presenting your results
+
+And: critically engaging with empirical research
+
+## Schedule I
+
+|         |            |                                                                    |
+|-----------|-------------|---------------------------------------------|
+| Session | Date       | Topic                                                              |
+| 1       | 11.10.2023 | Intro Session                                                      |
+| 2       | 18.10.2023 | The logic of social science research & Finding a research question |
+| 3       | 25.10.2023 | Literature review & Building theory                                |
+| 4       | 01.11.2023 | No session due to public holiday                                   |
+
+## Schedule II
+
+|         |            |                                                  |
+|---------|------------|--------------------------------------------------|
+| Session | Date       | Topic                                            |
+| 5       | 08.11.2023 | Formulating hypotheses & Research Design         |
+| 6       | 15.11.2023 | Measurements & Data collection                   |
+| 7       | 22.11.2023 | Data visualization & How to present your results |
+| 8       | 29.11.2023 | Student presentations                            |
+| 9       | 06.12.2023 | Closing session                                  |
+
+## Your expectations
+
+<iframe src="https://app.sli.do/event/tn95QeYqrXg3nk7PxeziKW" height="100%" width="100%" frameBorder="0" style="min-height: 560px;" title="Slido">
+
+</iframe>
+
+## Any concerns?
+
+<iframe src="https://app.sli.do/event/tn95QeYqrXg3nk7PxeziKW" height="100%" width="100%" frameBorder="0" style="min-height: 560px;" title="Slido">
+
+</iframe>
+
+## My plan & expectations
+
+-   We are a relatively small class. Great!
+
+-   Mix of lecture-style input, live coding, group exercises, and discussion.
+
+-   Dense schedule: Active participation in class and preparation is needed!
+
+-   Willingness to invest time to learn a (new) programming language, look for solutions on your own, and keep trying
+
+## Course requirements
+
+::: panel-tabset
+## Active participation
+
+By active participation I mean:
+
+-   Critically engaging with the assigned readings for each session
+
+-   Working on little assignments throughout the semester (e.g., think of a research question)
+
+-   Actively participating in discussions during our weekly meetings
+
+## Presentation
+
+-   You will present in groups of 2-3 research ideas and designs towards the end of the semester. We will form groups during the semester
+
+-   Each presentation should last around 15 minutes
+
+-   We will then actively discuss each presentation. We will assign discussants beforehand
+
+## Term paper
+
+-   \~1500 words (excluding cover page and references)
+
+-   It should include:
+
+    -   Introduction (Question and its relevance)
+
+    -   Short literature review
+
+    -   Theory and research design
+
+    -   (Simple data analysis)
+:::
+
+## Organisation & Resources
+
+-   Materials will be provided via the course website (and OLAT)
+
+-   Communication primarily via Slack. However, make sure that you have access to the course on OLAT and that emails that are sent over OLAT are forwarded to the email account you check regularly
+
+-   Weekly office hours after the seminar (online!). Please make an appointment via e-mail
+
+-   Access to Datacamp (Online learning platform for programming languages and more)
+
+## Primary readings
+
+-   Kellstedt, P. M., & Whitten, G. D. (2018). *The fundamentals of political science research*. Cambridge University Press.
+
+-   King, G., Keohane, R. O., & Verba, S. (1994). *Designing social inquiry: Scientific inference in qualitative research*. Princeton University Press.
+
+-   Powner, L. C. (2015). *Empirical Research and Writing: A Political Science Student's Practical Guide*. Los Angeles: Sage.
+
+I will provide you the readings via OLAT.
+
+## Important!
+
+::: panel-tabset
+## Disabilities
+
+-   Please contact me or the Office of Student Affairs if you need special assistance due to disabilities or chronic illnesses.
+
+-   And please do this early in the semester so that we can make the appropriate arrangements immediately.
+
+## Support
+
+-   Of course, you can always talk directly to me if you feel comfortable with the question. It is important to note that the [University's Office for Equality and Gender Studies](https://www.uibk.ac.at/gleichbehandlung/belaestigung/ansprechpersonen.html) supports and advises you in cases of discrimination or sexual harassment. Further, you can rely on the [psychological counseling](https://www.studierendenberatung.at/en) offered by the university.
+:::
+
+## Motivation for the seminar
+
+***From research idea to presenting results***
+
+Meeting the learning outcome means that you are on a great way
+
+-   to conduct (quantitative) social science research yourself,
+
+-   to present your research,
+
+-   and to understand and evaluate research from others.
+
+The tools you learn this semester will set you up for success during your Bachelor (and possibly your Master)! 🚀
+
+## Why R?
+
+::: panel-tabset
+#### Benefits
+
+-   Versatile: Visualizations, statistical analysis, programming, incorporation of other programming languages
+
+-   Free and open source
+
+    -   Large community, there is basically an answer to every question you will have online: Stackoverflow, ChatGPT, ...
+
+-   Increasing popularity in academia & industry
+
+#### Learning
+
+[![](LearningR.png)](https://devhumor.com/media/trying-to-learn-any-programming-language-100)
+
+#### Reward
+
+[![](nicegraphs.png){width="1440"}](https://bbc.github.io/rcookbook/)
+
+#### Opportunity
+
+[![](shinyapp.png){width="1699"}](https://vac-lshtm.shinyapps.io/ncov_tracker/)
+:::
+
+## Until our next session
+
+::: panel-tabset
+## Install & Join
+
+-   Make sure R and RStudio is installed and works
+
+    -   Instructions can be found on the course website
+
+-   Join the course Slack channel!
+
+    -   Invitation will follow
+
+-   Join the Datacamp team!
+
+    -   Invitation will follow
+
+## Read
+
+-   Chapter 1 - King, G., Keohane, R. O., & Verba, S. (1994). *Designing social inquiry: Scientific inference in qualitative research*. Princeton University Press.
+
+-   Chapter 1 - Powner, L. C. (2015). *Empirical Research and Writing: A Political Science Student's Practical Guide*. Los Angeles: Sage.
+
+## Think
+
+-   What characterizes good social science research?
+
+-   What are the components of a research design?
+
+-   What characterizes a good research question?
+
+-   How do I find a research question?
+
+-   What role does the existing scientific literature play?
+:::
+
+# Any open questions? 
+
+# See you next week!

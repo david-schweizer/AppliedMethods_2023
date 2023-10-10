@@ -1,0 +1,16 @@
+---
+title: "Literature Review & Building Theory"
+subtitle: "Week 3"
+author: "David Schweizer"
+date: "Oct 25, 2023"
+date-format: long
+institute: "University of Mannheim"
+format: 
+  revealjs:
+    theme: simple
+    slide-number: c/t #< collapsed/total
+    footer: "Applied Methods of Social Sciences | Winter semester 2023/24 | University of Innsbruck"
+editor: visual
+---
+
+# TBA

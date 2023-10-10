@@ -1,0 +1,23 @@
+---
+title: "Applied Methods of Social Sciences"
+subtitle: "402011 PS - Winter semester 2023/24"
+---
+
+## **Course overview**
+
+Using a mix of lecture-style input, interactive teaching, and discussions, this course teaches the fundamentals of scientific work and good scientific practice in the subject of political science using practical examples. Topics include critical reading of scientific texts, literature review and reference management software, formulating testable hypotheses, types of data collection and analysis, presenting empirical results, and how to write term papers. Overall, students will be equipped to critically evaluate research and conduct their own research projects with a focus on quantitative methods.
+
+## **Learning outcome**
+
+Students acquire the ability to deal with current empirical studies and to apply the first steps of a research process (formulation of a research issue, data collection, method reflection) autonomously in terms of quality and/or quantity or method.
+
+## **Course details**
+
+|               |                                                                                                     |
+|---------------|---------------------------------------------------------|
+| Proseminar:   | Applied Methods of Social Sciences                                                                  |
+| Time:         | Wednesday, 08:00 - 11:15 October 11 to December 06 (single sessions on October 11 and December 06)  |
+| Place:        | Virtual classroom                                                                                   |
+| Language:     | English                                                                                             |
+| Instructor:   | David Schweizer, M.A., david.schweizer\@uni-mannheim.de                                             |
+| Office hours: | Via Zoom, Wednesday 11:15 -- 12:15, please make an appointment by e-mail beforehand                 |

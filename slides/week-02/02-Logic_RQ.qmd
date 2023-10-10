@@ -1,0 +1,16 @@
+---
+title: "Social science research & Research questions"
+subtitle: "Week 2"
+author: "David Schweizer"
+date: "Oct 18, 2023"
+date-format: long
+institute: "University of Mannheim"
+format: 
+  revealjs:
+    theme: simple
+    slide-number: c/t #< collapsed/total
+    footer: "Applied Methods of Social Sciences | Winter semester 2023/24 | University of Innsbruck"
+editor: visual
+---
+
+# TBA

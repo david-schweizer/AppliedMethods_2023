@@ -1,0 +1,16 @@
+---
+title: "Measurement & Data Collection"
+subtitle: "Week 6"
+author: "David Schweizer"
+date: "Nov 15, 2023"
+date-format: long
+institute: "University of Mannheim"
+format: 
+  revealjs:
+    theme: simple
+    slide-number: c/t #< collapsed/total
+    footer: "Applied Methods of Social Sciences | Winter semester 2023/24 | University of Innsbruck"
+editor: visual
+---
+
+# TBA
