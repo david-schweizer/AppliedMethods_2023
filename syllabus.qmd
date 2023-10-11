@@ -8,14 +8,14 @@ editor:
 
 ## **Course details**
 
-|               |                                                                                                     |
-|-----------------|-------------------------------------------------------|
-| Proseminar:   | Applied Methods of Social Sciences                                                                  |
-| Time:         | Wednesday, 08:00 - 11:15 October 11 to December 06 (single sessions on October 11 and December 06)  |
-| Place:        | Virtual classroom                                                                                   |
-| Language:     | English                                                                                             |
-| Instructor:   | David Schweizer, M.A., david.schweizer\@uni-mannheim.de                                             |
-| Office hours: | Via Zoom, Wednesday 11:15 -- 12:15, please make an appointment by e-mail beforehand                 |
+|               |                                                                                                    |
+|---------------|----------------------------------------------------------------------------------------------------|
+| Proseminar:   | Applied Methods of Social Sciences                                                                 |
+| Time:         | Wednesday, 08:00 - 11:15 October 11 to December 06 (single sessions on October 11 and December 06) |
+| Place:        | Virtual classroom                                                                                  |
+| Language:     | English                                                                                            |
+| Instructor:   | David Schweizer, M.A., david.schweizer\@uni-mannheim.de                                            |
+| Office hours: | Via Zoom, Wednesday 11:15 -- 12:15, please make an appointment by e-mail beforehand                |
 
 ## **Course description**
 
@@ -146,7 +146,7 @@ I will provide you the readings via OLAT.
 ## **Course Schedule**
 
 |         |            |                                                                    |
-|------------------------|------------------------|------------------------|
+|---------|------------|--------------------------------------------------------------------|
 | Session | Date       | Topic                                                              |
 | 1       | 11.10.2023 | Intro Session                                                      |
 | 2       | 18.10.2023 | The logic of social science research & Finding a research question |
