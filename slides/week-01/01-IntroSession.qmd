@@ -73,7 +73,7 @@ editor: visual
 
 -   Building theory
 
--   What is a suitbale research design?
+-   What is a suitable research design?
 
 -   Collecting & analyzing data
 
@@ -84,7 +84,7 @@ And: critically engaging with empirical research
 ## Schedule I
 
 |         |            |                                                                    |
-|-----------|-------------|---------------------------------------------|
+|---------------|---------------|------------------------------------------|
 | Session | Date       | Topic                                                              |
 | 1       | 11.10.2023 | Intro Session                                                      |
 | 2       | 18.10.2023 | The logic of social science research & Finding a research question |
@@ -270,6 +270,6 @@ The tools you learn this semester will set you up for success during your Bachel
 -   What role does the existing scientific literature play?
 :::
 
-# Any open questions? 
+# Any open questions?
 
 # See you next week!
