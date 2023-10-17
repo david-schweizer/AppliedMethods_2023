@@ -9,7 +9,7 @@ editor:
 ## **Course details**
 
 |               |                                                                                                    |
-|---------------|----------------------------------------------------------------------------------------------------|
+|---------------|---------------------------------------------------------|
 | Proseminar:   | Applied Methods of Social Sciences                                                                 |
 | Time:         | Wednesday, 08:00 - 11:15 October 11 to December 06 (single sessions on October 11 and December 06) |
 | Place:        | Virtual classroom                                                                                  |
@@ -146,7 +146,7 @@ I will provide you the readings via OLAT.
 ## **Course Schedule**
 
 |         |            |                                                                    |
-|---------|------------|--------------------------------------------------------------------|
+|------------|------------|-----------------------------------------------|
 | Session | Date       | Topic                                                              |
 | 1       | 11.10.2023 | Intro Session                                                      |
 | 2       | 18.10.2023 | The logic of social science research & Finding a research question |
@@ -225,9 +225,10 @@ Content:
 
 Readings:
 
--   TBD
-
 -   Chapter 2 - Powner, L. C. (2015). *Empirical Research and Writing: A
+    Political Science Student's Practical Guide*. Los Angeles: Sage.
+
+-   Chapter 3 - Powner, L. C. (2015). *Empirical Research and Writing: A
     Political Science Student's Practical Guide*. Los Angeles: Sage.
 
 ::: {.callout-note appearance="minimal" icon="false"}

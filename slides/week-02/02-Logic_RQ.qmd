@@ -13,4 +13,611 @@ format:
 editor: visual
 ---
 
-# TBA
+## Plan for today
+
+::: panel-tabset
+## Part I
+
+-   Check in readings - Any troubles?
+
+-   **Social science research**
+
+    -   Characteristics of social science research *- Input*
+
+    -   Elements of a research design *- Group work*
+
+    -   Qualitative & quantitative research designs *- Input*
+
+::: {style="font-size: 80%;"}
+::: {.callout-note appearance="simple"}
+*Based on Chapter 1 - King, G., Keohane, R. O., & Verba, S. (1994). Designing social inquiry: Scientific inference in qualitative research. Princeton University Press.*
+:::
+:::
+
+## Break
+
+⏸️ **15 minute break:** Get some fresh air, a coffee, ...
+
+ 
+
+❔ Also, **time for questions**: Installing R and Rstudio
+
+## Part II
+
+-   **Research questions**
+
+    -   What makes a good research question? *- Input*
+
+    -   How do I find one? *- Group work*
+
+    -   Role of the existing literature *- Input*
+
+-   Check in - Could you follow along?
+
+::: {style="font-size: 80%;"}
+::: {.callout-note appearance="simple"}
+*Based on Chapter 1 - Powner, L. C. (2015). Empirical Research and Writing: A Political Science Student's Practical Guide. Los Angeles: Sage.*
+:::
+:::
+:::
+
+## Check in - Readings
+
+<iframe src="https://app.sli.do/event/decTGqYjDSkxFdwGMZEG8W/embed/polls/65de409b-d232-40bd-baa6-63d7612d03bb" width="1000" height="600">
+
+</iframe>
+
+## Check in - Readings
+
+<iframe src="https://app.sli.do/event/decTGqYjDSkxFdwGMZEG8W/embed/polls/aec2c9ab-90b1-47ad-a4dd-c11e08c2c803" width="1000" height="600">
+
+</iframe>
+
+# Social science resarch
+
+## Designing Social Inquiry
+
+::: columns
+::: {.column width="70%"}
+-   King, G., Keohane, R. O., and Verba, S. (1994). Designing Social Inquiry: Scientific Inference in Qualitative Research. Princeton: Princeton University Press.
+
+    -   *Chapter 1: The science in Social Science*
+:::
+
+::: {.column width="30%"}
+![](kingetal.jpg){fig-align="center" width="328"}
+:::
+:::
+
+## Characteristics of scientific research
+
+<iframe src="https://app.sli.do/event/decTGqYjDSkxFdwGMZEG8W/embed/polls/6071ce38-78e5-4646-9111-965fa7d1728f" width="1000" height="600">
+
+</iframe>
+
+## Characteristics of scientific research
+
+-   The goal is inference
+
+-   The procedures are public
+
+-   The conclusions are uncertain
+
+-   The content is the method
+
+-   Reduction of complexity
+
+## The goal is inference
+
+-   Inference: logical reasoning based on empirical observations
+
+-   Description is necessary, but not sufficient
+
+-   Descriptive inference (e.g. X and Y are related) vs. causal inference (e.g. more X leads to more Y)
+
+-   Inferences can be limited (in time, location, etc.)
+
+## The procedures are public
+
+-   Comprehensible and transparent approach
+
+-   Transparency allows strengths/weaknesses of certain methods to be assessed
+
+-   Replicability
+
+-   Exchange with colleagues & publication in journals
+
+::: {style="font-size: 80%;"}
+::: {.callout-tip appearance="simple"}
+Make use of offerings by your university!
+
+-   Events organized by the political science faculty, e.g., a lecture on [Europe's chal­lenges between Next Gen­er­a­tion EU and the revival of pop­ulists](https://www.uibk.ac.at/en/politikwissenschaft/jean-monnet-chair/events/2023-10-24-gualmini/) on October 24
+
+-   [A lecture series on AI](https://medien-kommunikation-ims.uibk.ac.at/2023/09/28/ringvorlesung-2023-24-kuenstliche-intelligenz-im-diskurs-interdisziplinaere-perspektiven-zur-gegenwart-und-zukunft-von-ki-anwendungen/) organized by innsbruck media studies
+:::
+:::
+
+## The conclusions are uncertain
+
+::: panel-tabset
+## Inference
+
+-   Inference is never perfect!
+
+-   There is always the probability that we are wrong
+
+-   Prominent example: Election polls
+
+::: {.callout-note appearance="simple"}
+Great communication of elections & polls
+
+-   [ABC News's 538](https://projects.fivethirtyeight.com/) for the US & [Politico's Poll of Polls](https://www.politico.eu/europe-poll-of-polls/) for Europe
+
+You can dive deeper into the topic with this [short blog post](https://blog.datawrapper.de/visualizing-election-polls/).
+:::
+
+## Polls
+
+::: {style="font-size: 60%;"}
+[![Source: \@Wahlen_AT.](umfrage.jpeg){width="756"}](https://twitter.com/Wahlen_AT/status/1712477327656161554/photo/1)
+:::
+
+## Differences
+
+::: {style="font-size: 60%;"}
+[![Source: Wahlrecht.de](sonntagsfrage_vergleich.png){width="911"}](https://www.wahlrecht.de/umfragen/)
+:::
+
+## Uncertainty
+
+::: {style="font-size: 60%;"}
+[![Source: Süddeutsche Zeitung & Zweitstimme.org](sz.png){width="1026"}](https://www.sueddeutsche.de/politik/bundestagswahl-prognose-vorhersage-1.5385101)
+:::
+:::
+
+## The content is the method
+
+-   Topics and questions might differ, however, procedures are the same
+
+-   Topics are usually not unique to science. They also can be addressed by journalists for example.
+
+-   But methods are!
+
+## Reduction of complexity
+
+-   Science tries to reduce the complexity of the world
+
+-   We use models with simplifying assumptions. For example:
+
+    -   From every day life: Maps
+
+    -   In political science: The unitary actor assumption
+
+    -   In economics: The homo oeconomicus
+
+# Group work
+
+*Elements of a research design*
+
+## Group work
+
+::: panel-tabset
+## Task
+
+The main elements of a research design are *research questions, theory, and data.* In each group, work on your respective subsection in King et al.'s chapter 1:
+
+-   Do you have any questions of understanding?
+
+-   What are the main points? Summarize them in your own words!
+
+-   Present your thoughts to the group. Create 1 or 2 slides.
+
+## Organisation
+
+We form three groups. Each group will work on a different subsection:
+
+-   Group 1: *Improving Research questions*
+
+-   Group 2: *ImprovingTheory*
+
+-   Group 3: *Improving data quality & Use of Existing Data*
+
+You have 25-30 minutes. You can find the subsections also as PDFs on [OLAT](https://lms.uibk.ac.at/url/RepositoryEntry/5512593691/CourseNode/108557700384931/path%3D~~Week%2002~~During%20the%20session~~Social%20science%20research/0).
+:::
+
+## Elements of a research design
+
+**Research question**
+
+-   May be shaped by personal circumstances or experiences, but: *no one cares what we think* (King et al., 1994, p.15)
+
+-   Two main criteria:
+
+    -   Societal relevance, not only academic
+
+    -   Contribution to a specific strand of literature
+
+-   Beyond: realistical, ethical, precise, concise,
+
+::: {style="font-size: 85%;"}
+::: {.callout-note appearance="simple"}
+Contacting administrations of municipalites with fake inquiries to conduct experiments. Ethical?
+:::
+:::
+
+## Elements of a research design
+
+**Finding a research question:**
+
+-   Hypothesis that has been found to be important in the literature but has not been systematically tested
+
+-   Accepted hypothesis that is suspected to possibly be false
+
+-   Contribute to controversies in the literature
+
+-   Challenge unquestioned assumptions in the literature
+
+-   Shed light on topics neglected in the literature
+
+-   Apply theories from one strand of literature to another strand of literature
+
+## Elements of a research design
+
+**Theory**
+
+*A social science theory is a reasoned and precise speculation about the answers to a research question, including a statement about why the proposed answer is correct.*
+
+(King et al., 1994, p.19)
+
+## Elements of a research design
+
+**Theory - Criteria**
+
+-   Falsifiable: what would convince us that the theory is false?
+
+-   Able to generate as many observable implications as possible
+
+-   Formulated as precisely as possible
+
+-   Should not be (heavily) adjusted afterwards to fit data/results!
+
+-   Theories are allowed to be wrong!
+
+## Elements of a research design
+
+**Data**
+
+-   *'Data' are systematically collected elements of information about the world.* (King et al., 1994, p.23)
+
+-   Quality criteria:
+
+    -   Well and cleanly documented survey/data collection
+
+    -   As many implications of theories as possible testable
+
+    -   Validity
+
+    -   Reliability
+
+    -   Replicability
+
+## Quantitative and qualitative research
+
+**Differences in research strategies**
+
+-   In theory
+
+    -   No opposites
+
+    -   Both approaches have advantages and disadvantages
+
+    -   Can complement each other
+
+-   In practice
+
+    -   Lack of understanding of other strategy
+
+    -   "Ignoring" the other side & little collaboration between qualitative and quantitative research
+
+## Characteristics of quantitative research
+
+-   Large number of cases (large N)
+
+    -   Countries, regions, individuals, ...
+
+-   Data collection
+
+    -   E.g., standardized surveys (election research)
+
+-   Statistical methods
+
+    -   Regression, significance test ...
+
+-   General statements
+
+    -   High generalizability & (statistical) tests of causal hypotheses
+
+## Characteristics of qualitative research
+
+-   Small number of cases (small N)
+
+    -   Single case analysis or few "cases" ("case studies")
+
+    -   Comprehensive description ("understanding")
+
+-   Varied data collection methods
+
+    -   In-depth interviews, focus groups, document analysis....
+
+-   Simple statistical methods: descriptive comparisons
+
+## Quantitative or qualitative?
+
+-   Type of method depends on the research question
+
+-   Qualitative studies are well suited to identify important elements of a question and to describe certain cases in detail.
+
+-   Quantitative analyses are well suited to test general relationships
+
+-   In my opinion, the best research combines both!
+
+# ⏸️ 15 minute break
+
+# ▶️ Research questions
+
+## Identifying patterns
+
+***Humans are by nature pattern seekers**; patterns help us make sense of the world around us. The patterns we find in the social world are not usually as strong or consistent as those in the natural world -- certainly not as strong as the first and second laws of thermodynamics, which govern our frying pan example -- but they definitely exist, and with a little bit of digging, we can find them. \[...\] **one observation does not make a pattern**.*
+
+(Powner 2015, S.2)
+
+## Theories of everyday life
+
+Task: Finding patterns in your everyday life *\~5 minutes*
+
+-   What theories of everyday life
+
+-   What patterns are there in social and political life?
+
+## Patterns in the social and political world
+
+*Unlike the natural sciences, our patterns are generally contingent on other circumstances.*\
+(Powner, 2015, p.2)
+
+Example: Economic growth influences voting behavior depending on the clarity of political responsibility
+
+::: {style="text-align: center;"}
+<span style="font-size: 185%">{{< fa democrat >}} {{< fa landmark >}} {{< fa republican >}}
+:::
+
+::: {style="text-align: center;"}
+{{< fa arrow-down >}}
+:::
+
+::: {style="text-align: center;"}
+<span style="font-size:185%">{{< fa chart-line >}}       {{< fa arrow-right-long >}}       {{< fa person-booth >}}
+:::
+
+## What makes a good research question?
+
+::: panel-tabset
+## Definition
+
+Research questions vs. research topic:
+
+*A research question allows us to bite off a section of the topic that's big enough to chew and swallow. It directs our attention to a manageable, defined, bounded problem and then tells us what constitutes a complete response.*
+
+(Powner, 2015, p.6)
+
+## Graphical illustration
+
+::: columns
+::: {.column width="50%"}
+Is the effect of economic growth on voting decisions influenced by the clarity of political responsibility?
+:::
+
+::: {.column width="50%"}
+![](rq.png)
+:::
+:::
+:::
+
+## What makes a good research question?
+
+-   Try to avoid: X-centered             X ⟶ ?
+
+    -   e.g., What are the consequences of economic growth?
+
+-   Better: Y-centered                          ? ⟶ Y
+
+    -   e.g., What factors influence voting behavior?
+
+-   Best: Y X-centered                         X ⟶ Y
+
+    -   e.g., What is the effect of economic growth on voting behavior?
+
+\
+
+::: {style="font-size: 65%;"}
+Note: X = independent variable, Y = dependent variable.
+:::
+
+## What makes a good research question?
+
+-   **Scientific relevance:** Knowing the state of research & making a scientific contribution.
+
+. . .
+
+-   **Societal relevance:** Also, think outside the box (normative questions, not relevant on a daily basis).
+
+. . .
+
+-   **Feasibility:** Not too broad, adapted to the scope of the research (book vs. term paper).
+
+. . .
+
+-   **Relation to existing theories/questions:** Not necessarily to theories from political science!
+
+## What makes a good research question?
+
+You should avoid:
+
+-   Questions that have 'factual answers'.
+
+-   Questions that refer too much to specific cases
+
+-   Questions that ask for specific indicators/ concepts
+
+-   Questions that are not open-ended or already contain an answer
+
+## How to find a good research question?
+
+**Remember from King et al. (1994)?**
+
+. . .
+
+1\. Hypothesis found to be important in the literature but not systematically tested.
+
+2\. Accepted hypothesis that is suspected to be possibly false
+
+3\. Hypotheses that contribute to controversy in the literature
+
+4\. Challenge unquestioned assumptions in the literature
+
+5\. Shed light on topics neglected in the literature
+
+6\. Apply theories from one strand of literature to another strand of literature
+
+## How to find a good research question?
+
+::: panel-tabset
+## Starting point
+
+-   Other research is a great starting point
+
+-   However, there many other options. Inspiration can come from:
+
+    -   Newspapers
+
+    -   (Political) books
+
+    -   Social media
+
+    -   ...
+
+## (Political) memes?
+
+::: {style="font-size: 60%;"}
+[![Source: Vox. "The"Dark Brandon\" meme --- and why the Biden campaign has embraced it --- explained\"](memes.png){width="591"}](https://www.vox.com/culture/23300286/biden-dark-brandon-meme-maga-why-confusing-explained)
+:::
+:::
+
+# Group work
+
+*How to find a research question*
+
+## Group work
+
+::: panel-tabset
+## Task
+
+In each group skim the respective research article for your group:
+
+-   Identify the research question(s) of the article. Tip: Usually, you find them already in the abstract or in the introduction.
+
+-   Come up with a research question based on the article's research question. Usually, limitations and/or possibilities for future research are mentioned in the conclusion.
+
+## Organisation
+
+We form three groups. Each group will work on a different article:
+
+-   Group 1: *Carey & Gohdes, 2021*
+
+-   Group 2: *Abou-Chadi, 2016*
+
+-   Group 3: *Matthieß, 2020*
+
+You have \~25. You can find the articels as PDFs on [OLAT](https://lms.uibk.ac.at/url/RepositoryEntry/5512593691/CourseNode/108557700384931/path%3D~~Week%2002~~During%20the%20session~~Research%20questions/0).
+:::
+
+## The role of existing literature
+
+-   Scientific Relevance: Identifying a research gap and making a contribution
+
+-   Inspiration: further research
+
+-   Science as a cumulative process
+
+    -   Expand theory
+
+    -   Improve measurements and methods
+
+    -   ...
+
+## Evaluating research questions
+
+**Exercise**
+
+-   Why do presidents spend so much time talking about foreign policy during the campaign when only 1-2% of voters base their votes on it?
+
+-   How do countries' economic interests affect their positions on the war between Russia and Ukraine
+
+-   What are the consequences of climate change?
+
+-   Why does the political left become social democratic in some Latin American countries and populist in others?
+
+::: {style="font-size: 65%;"}
+Note: Partially based on Powner, 2015.
+:::
+
+## Check in - Session 2
+
+<iframe src="https://app.sli.do/event/hr8A3NdbvW2yWgn9Q9HEBh/embed/polls/18c121c1-f107-4dcb-8c62-7c3cdabd0dd0" width="1000" height="600">
+
+</iframe>
+
+## Mandatory exercise until next week
+
+-   Come up with a research question about a topic in political science that interests you. Also explain why it is relevant in 4-5 sentences.
+
+-   Hand in the research question in a PDF document via e-mail until next Tuesday, 24.10., by noon (12:00).
+
+-   **This is your first exercise: It is not a problem if you do any mistakes. There are no stupid questions!**
+
+::: {style="font-size: 85%;"}
+::: {.callout-tip appearance="simple"}
+Skim a few articles for inspiration, important and high-quality journals include: American Political Science Review, American Journal of Political Science, Journal of Politics, and the British Journal of Political Science. You can get access to the articles via the university library.
+:::
+:::
+
+## Until our next session
+
+::: panel-tabset
+## Install (voluntary)
+
+-   Install [Zotero](https://www.zotero.org/). It is a free software to help you with managing your references when writing, among other things. I will give a short introduction to the program. If installed, you can click along.
+
+## Read
+
+-   Chapter 2 and chapter 3 - Powner, L. C. (2015). *Empirical Research and Writing: A Political Science Student's Practical Guide*. Los Angeles: Sage.
+
+-   Recommendation in German: Plümper, T. (2012). *Effizient schreiben: Leitfaden zum Verfassen von Qualifizierungsarbeiten und wissenschaftlichen Texten*. München: Oldenbourg Verlag.
+
+## Think
+
+Guiding questions:
+
+-   What is relevant literature?
+
+-   How do I find relevant literature?
+
+-   How do I structure a literature review?
+
+-   What are the components of good theory?
+
+-   What is a causal mechanism?
+:::
+
+# Any open questions?
+
+# See you next week!
