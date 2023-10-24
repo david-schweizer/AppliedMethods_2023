@@ -47,6 +47,21 @@ You can find the readings [here](https://lms.uibk.ac.at/url/RepositoryEntry/5512
 # To Do's before our session
 
 ::: panel-tabset
+
+## Mandatory exercise 
+
+-   Come up with a research question about a topic in political science that interests you. Also explain why it is relevant in 4-5 sentences.
+
+-   Hand in the research question in a PDF document via e-mail until **next Tuesday, 24.10., by noon (12:00).**
+
+-   **This is your first exercise: It is not a problem if you do any mistakes. There are no stupid questions!**
+
+::: {style="font-size: 85%;"}
+::: {.callout-tip appearance="simple"}
+Skim a few articles for inspiration, important and high-quality journals include: American Political Science Review, American Journal of Political Science, Journal of Politics, and the British Journal of Poli
+:::
+:::
+
 ## Install (voluntary)
 
 -   Install [Zotero](https://www.zotero.org/). It is a free software to help you with managing your references when writing, among other things. I will give a short introduction to the program. If installed, you can click along.
