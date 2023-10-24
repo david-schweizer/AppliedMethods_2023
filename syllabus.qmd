@@ -9,7 +9,7 @@ editor:
 ## **Course details**
 
 |               |                                                                                                    |
-|---------------|---------------------------------------------------------|
+|-----------------|-------------------------------------------------------|
 | Proseminar:   | Applied Methods of Social Sciences                                                                 |
 | Time:         | Wednesday, 08:00 - 11:15 October 11 to December 06 (single sessions on October 11 and December 06) |
 | Place:        | Virtual classroom                                                                                  |
@@ -146,13 +146,13 @@ I will provide you the readings via OLAT.
 ## **Course Schedule**
 
 |         |            |                                                                    |
-|------------|------------|-----------------------------------------------|
+|---------------|---------------|-------------------------------------------|
 | Session | Date       | Topic                                                              |
 | 1       | 11.10.2023 | Intro Session                                                      |
 | 2       | 18.10.2023 | The logic of social science research & Finding a research question |
 | 3       | 25.10.2023 | Literature review & Building theory                                |
 | 4       | 01.11.2023 | No session due to public holiday                                   |
-| 5       | 08.11.2023 | Research Design                                                    |
+| 5       | 08.11.2023 | Reading strategies & Research Design                               |
 | 6       | 15.11.2023 | Measurements & Data collection                                     |
 | 7       | 22.11.2023 | Data visualization & How to present your results                   |
 | 8       | 29.11.2023 | Student presentations                                              |
@@ -236,10 +236,15 @@ Readings:
 :::
 
 ::: {.callout-note appearance="minimal" icon="false"}
-**Session 05 - 08.11.2023 -** **Research design**
+**Session 05 - 08.11.2023 -** **Reading strategies &** **Research
+design**
 :::
 
 Content:
+
+-   Different types of reading?
+
+-   How can we read (more) efficiently?
 
 -   What research designs are there?
 
@@ -247,9 +252,9 @@ Content:
 
 Readings:
 
--   Chapter 3 - Kellstedt, P. M., & Whitten, G. D. (2018). *The
-    fundamentals of political science research*. Cambridge University
-    Press.
+-   Have a look at these [blog posts by Raul
+    Pacheco-Vega](http://www.raulpacheco.org/resources/reading-strategies/)
+    regarding reading strategies.
 
 -   Chapter 4 - Kellstedt, P. M., & Whitten, G. D. (2018). *The
     fundamentals of political science research*. Cambridge University

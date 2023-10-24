@@ -1,5 +1,5 @@
 ---
-title: "Research Design"
+title: "Reading Strategies & Research Design"
 subtitle: "Week 5"
 author: "David Schweizer"
 date: "Nov 08, 2023"
