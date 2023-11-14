@@ -9,7 +9,7 @@ editor:
 ## **Course details**
 
 |               |                                                                                                    |
-|-----------------|-------------------------------------------------------|
+|------------------|------------------------------------------------------|
 | Proseminar:   | Applied Methods of Social Sciences                                                                 |
 | Time:         | Wednesday, 08:00 - 11:15 October 11 to December 06 (single sessions on October 11 and December 06) |
 | Place:        | Virtual classroom                                                                                  |
@@ -52,19 +52,64 @@ familiarise yourself with the programming language R.
     regarding the readings. Keep them in mind while reading.
 
 -   Working on little assignments throughout the semester (e.g., think
-    of a research question)
+    of a research question, conduct a literature search)
 
--   Actively participating in discussions during our weekly meetings
+-   Actively participating in discussions and group work during our
+    weekly meetings
 
-**Presentation**
+### Group presentations
 
--   You will present research ideas and designs towards the end of the
-    semester in groups of 2-3. We will form groups during the semester
+::: panel-tabset
+## In general
 
--   Each presentation should last around 15 minutes
+-   4 groups, 10-12 minutes of presentation, 15 minutes of discussion
 
--   We will then actively discuss each presentation. We will assign
-    discussants beforehand
+-   Prepare a powerpoint presentation. Send me at least an outline until
+    **November 27, 11:30 am.**
+
+-   Participate in discussion of other presentations
+
+-   Topics can include: Democratic backsliding, the political impact of
+    radical right populist parties, cleavage politics (e.g., young vs.
+    old, rural vs. urban, ...)
+
+## Expectations
+
+In your presentation, you should demonstrate your understanding of the
+materials covered so far.
+
+::: {style="font-size: 70%;"}
+::: {.callout-tip appearance="simple"}
+Your presentation should cover the following:
+
+-   Research question
+
+-   Theory & research design
+
+    -   Expectation, causal mechanism, assumptions, scope?
+
+    -   Can you cross the four hurdles?
+
+    -   Type of research design
+
+-   Measurement strategy
+
+    -   How do you operationalize your concepts?
+
+-   Possible datasets / databases
+:::
+:::
+
+## Groups
+
+-   Group 1: Jakub Bieniek, Ying-Fan Chen, Maria Michelaki
+
+-   Group 2: Josef Galli, Elias Latta,Bernadett Neszt
+
+-   Group 3: Daniel Saath, Daniel Schatzer
+
+-   Group 4: Matthias Lung, Anna-Maria Egger
+:::
 
 **Short term paper**
 
@@ -146,7 +191,7 @@ I will provide you the readings via OLAT.
 ## **Course Schedule**
 
 |         |            |                                                                    |
-|---------------|---------------|-------------------------------------------|
+|----------------|----------------|----------------------------------------|
 | Session | Date       | Topic                                                              |
 | 1       | 11.10.2023 | Intro Session                                                      |
 | 2       | 18.10.2023 | The logic of social science research & Finding a research question |
@@ -154,8 +199,8 @@ I will provide you the readings via OLAT.
 | 4       | 01.11.2023 | No session due to public holiday                                   |
 | 5       | 08.11.2023 | Reading strategies & Research Design                               |
 | 6       | 15.11.2023 | Measurements & Data collection                                     |
-| 7       | 22.11.2023 | Data visualization & How to present your results                   |
-| 8       | 29.11.2023 | Student presentations                                              |
+| 7       | 22.11.2023 | Data transformation and visulization & How to present your results |
+| 8       | 29.11.2023 | Student presentations & Writing tips                               |
 | 9       | 06.12.2023 | Closing session                                                    |
 
 ## **Preliminary Overview of our Sessions**
@@ -268,7 +313,11 @@ Content:
 
 -   How to measure concepts?
 
+-   What is validity and reliability?
+
 -   Where to find data?
+
+-   Hands-on introduction to R and RStudio
 
 Readings:
 
@@ -277,13 +326,14 @@ Readings:
     Press.
 
 ::: {.callout-note appearance="minimal" icon="false"}
-**Session 07 - 22.11.2023 - Data visualization & how to present your
-results**
+**Session 07 - 22.11.2023 - Data transformation and visualization**
 :::
 
 Content:
 
--   Basic data analysis
+-   How to transform data
+-   How to visualize data
+-   How to present your results
 
 Readings:
 
@@ -291,7 +341,7 @@ Readings:
     fundamentals of political science research*. Cambridge University
     Press.
 
--   Chapter 3 - Wickham, H., Çetinkaya-Rundel, M., & Grolemund, G.
+-   Chapter 1 and 3 - Wickham, H., Çetinkaya-Rundel, M., & Grolemund, G.
     (2023). *R for data science*. O'Reilly Media, Inc. [Link to free
     online version](https://r4ds.had.co.nz/data-visualisation.html)
 
@@ -302,6 +352,7 @@ Readings:
 Content:
 
 -   Student presentations
+-   Writing tips for your term paper
 
 Readings:
 

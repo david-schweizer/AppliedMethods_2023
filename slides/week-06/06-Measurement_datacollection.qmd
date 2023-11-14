@@ -13,4 +13,455 @@ format:
 editor: visual
 ---
 
-# TBA
+## Plan for today
+
+::: panel-tabset
+## Part I
+
+-   A few notes on the group presentations
+
+<!-- -->
+
+-   **Measurements**
+
+    -   How to measure concepts?
+    -   What is validity and reliability?
+
+::: {.callout-note appearance="simple"}
+::: {style="font-size: 80%;"}
+*Based on Chapter 5 - Kellstedt, P. M., & Whitten, G. D. (2018). The fundamentals of political science research. Cambridge University Press.*
+:::
+:::
+
+## Break
+
+⏸️ **5 minute break:** Get some fresh air, ...
+
+## Part II
+
+-   **Data collection**
+
+    -   Where to find data
+
+-   Any questions?
+
+## Break
+
+⏸️ **15 minute break:**\
+Get some fresh air, breakfast, a coffe, ...
+
+\
+
+❔ **Also: time for questions**
+
+## Part III
+
+-   **Intro to R and R Studio**
+    -   Hands-on introduction
+:::
+
+# Notes on group presentations
+
+## Group presentations
+
+::: panel-tabset
+## In general
+
+-   4 groups, 10-12 minutes of presentation, 15 minutes of discussion
+
+-   Prepare a powerpoint presentation. Send me at least an outline until **November 27, 11:30 am.**
+
+-   Participate in discussion of other presentations
+
+-   Topics can include: Democratic backsliding, the political impact of radical right populist parties, cleavage politics (e.g., young vs. old, rural vs. urban, ...)
+
+## Expectations
+
+In your presentation, you should demonstrate your understanding of the materials covered so far.
+
+::: {style="font-size: 70%;"}
+::: {.callout-tip appearance="simple"}
+Your presentation should cover the following:
+
+-   Research question
+
+-   Theory & research design
+
+    -   Expectation, causal mechanism, assumptions, scope?
+
+    -   Can you cross the four hurdles?
+
+    -   Type of research design
+
+-   Measurement strategy
+
+    -   How do you operationalize your concepts?
+
+-   Possible datasets / databases
+:::
+:::
+
+## Groups
+
+-   Group 1: Jakub Bieniek, Ying-Fan Chen, Maria Michelaki
+
+-   Group 2: Josef Galli, Elias Latta,Bernadett Neszt
+
+-   Group 3: Daniel Saath, Daniel Schatzer
+
+-   Group 4: Matthias Lung, Anna-Maria Egger
+:::
+
+## Where are we?
+
+::: {style="font-size: 60%;"}
+![Source: Kellstedt & Whitten. Figure 1.2.](overview.png){width="841"}
+:::
+
+## Concepts
+
+-   **Term:** The concept's name
+
+-   **Intension:** The concept's attributes (meaning)
+
+-   **Extension:** The concept's empirical scope (operationalization)
+
+. . .
+
+-   **Term:** Social status
+
+. . .
+
+-   **Intension:** Subjective, Objective
+
+-   **Extension:** (Objective): Education, Income, ...
+
+## Measurement in the social sciences
+
+-   Measurement is a problem for all social sciences
+
+-   However, sometimes it is more straightforward
+
+    -   For example, GDP as measurement for economic output
+
+-   Usually, it is less straightforward:
+
+    -   For example, how to measure poverty?
+
+# Can you think of a hard concept to measure?
+
+# How would you measure political sophistication?
+
+. . .
+
+Patrick Kraft has written a great article on the gender gap in political sophistication. You can a short article summarizing his research [**here**](https://blogs.lse.ac.uk/usappblog/2023/09/11/changing-how-surveys-are-conducted-shows-there-is-no-gap-in-political-sophistication-between-women-and-men/).
+
+# How should we measure political sophistication?
+
+Take 10 minutes to read Patrick Kraft's [article](https://blogs.lse.ac.uk/usappblog/2023/09/11/changing-how-surveys-are-conducted-shows-there-is-no-gap-in-political-sophistication-between-women-and-men/). The article is based on his paper [Women also Know Stuff: Challenging the Gender Gap in Political Sophistication](https://www.cambridge.org/core/journals/american-political-science-review/article/women-also-know-stuff-challenging-the-gender-gap-in-political-sophistication/111EA1DCE42C11172AA7F171EBBB2AAC) published in the American Political Science Review (APSR).
+
+## Measurements - Problems
+
+As mentioned, some concepts are easier to measure than others.
+
+However, we can address four "problems" to ensure that we have a good measurement:
+
+-   Conceptual clarity
+
+-   Reliability
+
+-   Measurement bias and reliability
+
+-   Validity
+
+## Conceptual clarity
+
+**What exactly is the theoretical concept we want to measure?** Let's look at the example of income. How would you ask for income in a survey?
+
+. . .
+
+::: {.callout-caution appearance="simple"}
+Problems with "What is your income?" For example:
+
+-   Married couple with children and only one parent works. The other has factually an income of zero.
+
+-   A student with no job but rich parents vs. a student with a job but no financial support from his or her family.
+:::
+
+. . .
+
+**The best measure for income - and other concepts - depends on our research objective!**
+
+## Reliability
+
+A measure of a concept is reliable to the extent that it is repeatable or consistent. If we apply the same measurement rules to the same case, it should produce identical results.
+
+::: {.callout-note appearance="simple"}
+Example from quantitative text analysis:
+
+-   We want to identify the topic of climate change in politicians' social media posts.
+
+-   We develop a coding scheme that describes when a post should be coded as climate related or not.
+
+-   Multiple student assistants manually code a sample of social media posts.
+
+-   Our measure is reliable when the students arrive at the same results!
+:::
+
+## Reliability - Coding social media posts
+
+::: panel-tabset
+## Post 1
+
+<blockquote class="twitter-tweet">
+
+<p lang="en" dir="ltr">
+
+The Climate Club is here! As the <a href="https://twitter.com/G7?ref_src=twsrc%5Etfw">@G7</a>, we founded it today with statutes emphasising its open and cooperative character. It will comprise further important countries by the next Climate Change Conference -- a significant contribution to achieving the global climate targets.
+
+</p>
+
+--- Bundeskanzler Olaf Scholz (@Bundeskanzler) <a href="https://twitter.com/Bundeskanzler/status/1602349170899173377?ref_src=twsrc%5Etfw">December 12, 2022</a>
+
+</blockquote>
+
+```{=html}
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+```
+## Post 2
+
+<blockquote class="twitter-tweet">
+
+<p lang="de" dir="ltr">
+
+<a href="https://twitter.com/hashtag/Klimaterroristen?src=hash&amp;ref_src=twsrc%5Etfw">#Klimaterroristen</a>, die mit ihren Aktionen Leben gefährden, sind als solche auch klar zu benennen. Übrigens: Unser <a href="https://twitter.com/hashtag/Unwort?src=hash&amp;ref_src=twsrc%5Etfw">#Unwort</a> des Jahres ist <a href="https://twitter.com/hashtag/Transformation?src=hash&amp;ref_src=twsrc%5Etfw">#Transformation</a>. Ein Dauer-Kampfbegriff der <a href="https://twitter.com/hashtag/Ampel?src=hash&amp;ref_src=twsrc%5Etfw">#Ampel</a>, der die Abwirtschaftung unseres Landes auf allen Ebenen wie kein anderer verkörpert. <a href="https://twitter.com/hashtag/AfD?src=hash&amp;ref_src=twsrc%5Etfw">#AfD</a>
+
+</p>
+
+--- AfD (@AfD) <a href="https://twitter.com/AfD/status/1612749929205714953?ref_src=twsrc%5Etfw">January 10, 2023</a>
+
+</blockquote>
+
+```{=html}
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+```
+## Post 3
+
+<blockquote class="twitter-tweet">
+
+<p lang="en" dir="ltr">
+
+.<a href="https://twitter.com/realDonaldTrump?ref_src=twsrc%5Etfw">@realDonaldTrump</a> please don't change the (political) climate for the worse.
+
+</p>
+
+--- Charles Michel (@eucopresident) <a href="https://twitter.com/eucopresident/status/870179214112301056?ref_src=twsrc%5Etfw">June 1, 2017</a>
+
+</blockquote>
+
+```{=html}
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+```
+:::
+
+## Measurement bias and reliability
+
+Measurement bias describes the systematic over- or under-reporting of a variable's values. This is a problem if we want to know the "true" values for our observations.
+
+But: For theory testing, we would still prefer **biased but reliable measures** compared to **unbiased but unreliable measures.** Why?
+
+. . .
+
+-   We look for the relationship between two variables: Even if our measure is biased upward, we would see the same association. E.g., higher values of X ➝ lower values of Y.
+
+-   Can you come up with an example?
+
+## Validity
+
+::: panel-tabset
+## In general
+
+Our measurement is valid if it accurately represents the concept that we want to measure.
+
+::: {.callout-caution appearance="simple"}
+This seems straightforward! But take the example of prejudice.
+
+-   If you ask people if they hold prejudices against others due to their race or ethnicity, would you trust their answers?
+
+-   No. We would question the validity of their responses!
+:::
+
+We rely on multiple ways to determine if a measure is valid.
+
+## Face \...
+
+Face validity: Does the measurement measure what it is supposed to measure?
+
+-   For a measure to have face validity, it's purpose and meaning should be clear to everybody
+
+::: {.callout-caution appearance="simple"}
+Example: Measuring age
+
+-   by asking people for their birthday?
+
+-   by counting their gray hairs?
+:::
+
+## Content \...
+
+Content validity: Have we included all essential elements that define our concept?
+
+We need to be aware of all essential elements that define our concept of interest!
+
+::: {.callout-caution appearance="simple"}
+Example: Measuring democracy
+
+-   Our measure should include the element of *elections*
+
+-   But what about places such as North Korea?
+:::
+
+## Construct validity
+
+Is our measure related to other measures based on the assumptions of our theory?
+
+::: {.callout-note appearance="simple"}
+Example: Democracy & economic development
+
+-   We theorize that there is a positive relationship between the concepts of democratization and economic development
+
+-   Then, there should also be a relationship between our measures of democratization and economic development
+:::
+:::
+
+## Validity & reliability
+
+::: {style="font-size: 60%;"}
+[![Source: Jean Clipperton, et al. (2022)](reliability_validity.png){width="1760"}](https://nulib-oer.github.io/empirical-methods-polisci/data.html#measurement)
+:::
+
+## Application: Measuring democracy
+
+::: panel-tabset
+## General
+
+-   One might think that a country *is* or *is not* democratic. However, we should probably think of it as a continuum.
+
+-   A famous conceptualization of democracy is proposed by Robert Dahl (1971). Democracies are characterized by competitive elections and citizens' participation
+
+::: {.callout-note appearance="simple"}
+Projects measuring democracy include:
+
+-   [V-Dem (Varieties of Democracy](https://v-dem.net/), [Freedom House](https://freedomhouse.org/), and [Polity V](https://www.systemicpeace.org/polityproject.html)
+:::
+
+## V-Dem across the world
+
+![](vdem_world.png){width="929"}
+
+## and over time
+
+![](vdem_austria.png){width="813"}
+:::
+
+# How would you measure democracy?
+
+... when studying the effects of radical right populist parties on democracy? Take 10 minutes and inspect the [V-Dem's graphing tools](https://v-dem.net/graphing/graphing-tools/)
+
+## Does measurement matter?
+
+-   Different measurements can result in different conclusions about (causal) relationships!
+
+**Main take-aways:**
+
+-   Theory is essential for our measurements!
+
+-   The way we measure our concept of interest should be guided by our research objective!
+
+# ⏸️ 10 minute break
+
+# ▶️ Data collection
+
+## Secondary data
+
+-   Fielding your own survey is resource intensive. It takes time and costs money.
+
+-   Therefore, we oftentimes analyze **secondary data**. That is, data collected by others.
+
+-   It is not easy to keep the overview of datasets and databases. You will get better with this over time and when specializing on a particular field of research!
+
+## Political science datasets
+
+There are many efforts to make data sets more accessible to researchers. Still: Google, google, google!
+
+If you are curious have a look at these resources:
+
+-   Find replication files in the [Harvard dataverse](https://dataverse.harvard.edu/)
+
+-   Browse throuh the[PoliSciData website](https://www.poliscidata.com/index.php) to find data by subfield
+
+-   Or have a look at the collection of datasets by [Erik Gahner](https://github.com/erikgahner/PolData)
+
+## Statistics
+
+Of course, some statistics such as GDP or unemployment rates are provided by statistical offices of countries or organizations.
+
+For example:
+
+-   [Eurostat](https://ec.europa.eu/eurostat/de/)
+
+-   [The World Bank](https://data.worldbank.org/)
+
+-   [OECD](https://data.oecd.org/)
+
+Similarly, election results are published by agencies such as the [Bundeswahleiter in Germany](https://www.bundeswahlleiterin.de/en/bundeswahlleiter.html).
+
+## Datasets I use in my research
+
+-   The [German Longitudinal Election Study](https://www.gesis.org/gles/about-gles)
+
+-   The [European Social Survey](https://www.europeansocialsurvey.org/)
+
+-   [ParlGov](https://www.parlgov.org/about/)
+
+-   The [manifesto project](https://manifesto-project.wzb.eu/)
+
+-   [The PopuList](https://popu-list.org/)
+
+# Group work
+
+Measurement & data
+
+## Group work
+
+**Exercise \~ 30 minutes**
+
+-   Now, its your turn: Think of any research question. This can also be the research question you have developed.
+-   How would you measure the concepts you are interested in, that is, your independent and dependent variables. What about possible confounders?
+-   Are your measurements valid?
+-   Can you find databases or datasets to study your research question?
+
+# ⏸️ 15 minute break
+
+# ▶️ Intro to R and RStudio
+
+# Practical introduction
+
+## Until our next session
+
+::: panel-tabset
+## Read
+
+-   Chapter 6 - Kellstedt, P. M., & Whitten, G. D. (2018). *The fundamentals of political science research*. Cambridge University Press.
+-   Chapter 1 & 3 - Wickham, H., Çetinkaya-Rundel, M., & Grolemund, G. (2023). *R for data science (2e)*. O'Reilly Media, Inc. [Link to free online version](https://r4ds.hadley.nz/data-transform)
+
+## Think
+
+Guiding questions:
+
+-   What type of variables do you use to measure your concept of interest? Is it categorial or continuous?
+:::
+
+# Any open questions?
+
+# See you next week!

@@ -1,5 +1,5 @@
 ---
-title: "Student presentations"
+title: "Student presentations & Writing tips"
 subtitle: "Week 08"
 description: ""
 author: ""
