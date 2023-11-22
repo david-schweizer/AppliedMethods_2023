@@ -4652,14 +4652,14 @@
     "href": "slides/week-07/07-datatransform_dataviz.html#dplyrglimpse",
     "title": "Data transformation & visualization",
     "section": "dplyr::glimpse",
-    "text": "dplyr::glimpse\n\nExplanation\n\n\nglimpse(): gives a first informative look at the data (especially helpful when working with data sets that contain many columns/variables). ## Code\n\ngapminder %&gt;% \n  glimpse()\n\nRows: 1,704\nColumns: 6\n$ country   &lt;fct&gt; \"Afghanistan\", \"Afghanistan\", \"Afghanistan\", \"Afghanistan\", …\n$ continent &lt;fct&gt; Asia, Asia, Asia, Asia, Asia, Asia, Asia, Asia, Asia, Asia, …\n$ year      &lt;int&gt; 1952, 1957, 1962, 1967, 1972, 1977, 1982, 1987, 1992, 1997, …\n$ lifeExp   &lt;dbl&gt; 28.801, 30.332, 31.997, 34.020, 36.088, 38.438, 39.854, 40.8…\n$ pop       &lt;int&gt; 8425333, 9240934, 10267083, 11537966, 13079460, 14880372, 12…\n$ gdpPercap &lt;dbl&gt; 779.4453, 820.8530, 853.1007, 836.1971, 739.9811, 786.1134, …"
+    "text": "dplyr::glimpse\n\nExplanationCode\n\n\nglimpse(): gives a first informative look at the data (especially helpful when working with data sets that contain many columns/variables).\n\n\n\ngapminder %&gt;% \n  glimpse()\n\nRows: 1,704\nColumns: 6\n$ country   &lt;fct&gt; \"Afghanistan\", \"Afghanistan\", \"Afghanistan\", \"Afghanistan\", …\n$ continent &lt;fct&gt; Asia, Asia, Asia, Asia, Asia, Asia, Asia, Asia, Asia, Asia, …\n$ year      &lt;int&gt; 1952, 1957, 1962, 1967, 1972, 1977, 1982, 1987, 1992, 1997, …\n$ lifeExp   &lt;dbl&gt; 28.801, 30.332, 31.997, 34.020, 36.088, 38.438, 39.854, 40.8…\n$ pop       &lt;int&gt; 8425333, 9240934, 10267083, 11537966, 13079460, 14880372, 12…\n$ gdpPercap &lt;dbl&gt; 779.4453, 820.8530, 853.1007, 836.1971, 739.9811, 786.1134, …"
   },
   {
     "objectID": "slides/week-07/07-datatransform_dataviz.html#dplyrselect",
     "href": "slides/week-07/07-datatransform_dataviz.html#dplyrselect",
     "title": "Data transformation & visualization",
     "section": "dplyr::select",
-    "text": "dplyr::select\n\nExplanation\n\n\nselect(): select variables to reduce or create a new dataframe to only include a subset of specific variables. ## Code\n\ngapminder_pop &lt;- gapminder %&gt;%\n  select(country, \n         year, \n         pop)"
+    "text": "dplyr::select\n\nExplanationCode\n\n\nselect(): select variables to reduce or create a new dataframe to only include a subset of specific variables.\n\n\n\ngapminder_pop &lt;- gapminder %&gt;%\n  select(country, \n         year, \n         pop)"
   },
   {
     "objectID": "slides/week-07/07-datatransform_dataviz.html#dplyr-select---range-of-variables",
@@ -4736,7 +4736,7 @@
     "href": "slides/week-07/07-datatransform_dataviz.html#mapping-data-to-aesthetics",
     "title": "Data transformation & visualization",
     "section": "Mapping data to aesthetics",
-    "text": "Mapping data to aesthetics\n\nMapping health and wealthCodeOutput\n\n\n\n\n\nData\nAesthetics - aes()\nGeometry - geom\n\n\n\n\nWealth (GDP per capita)\nx\ngeom_point\n\n\nHealth (Life expectancy)\ny\ngeom_point\n\n\nContinent\ncolor\ngeom_point\n\n\n\n\n\n\nggplot(data = gapminder %&gt;% filter(year==2007)) +\n  geom_point(mapping = aes(x = gdpPercap,\n                           y = lifeExp,\n                           color = continent))\n\n\n\n\nggplot(data = gapminder %&gt;% filter(year==2007)) +\n  geom_point(mapping = aes(x = gdpPercap,\n                           y = lifeExp,\n                           color = continent))"
+    "text": "Mapping data to aesthetics\n\nMapping health and wealthCodeOutput\n\n\n\n\n\nData\nAesthetics - aes()\nGeometry - geom\n\n\n\n\nWealth (GDP per capita)\nx\ngeom_point\n\n\nHealth (Life expectancy)\ny\ngeom_point\n\n\nContinent\ncolor\ngeom_point\n\n\n\n\n\n\nggplot(data = gapminder %&gt;% filter(year==2007)) +\n  geom_point(mapping = aes(x = gdpPercap,\n                           y = lifeExp,\n                           color = continent))"
   },
   {
     "objectID": "slides/week-07/07-datatransform_dataviz.html#health-and-wealth",
@@ -4904,14 +4904,14 @@
     "href": "slides/week-07/07-datatransform_dataviz.html#ordinal-variables",
     "title": "Data transformation & visualization",
     "section": "Ordinal variables",
-    "text": "Ordinal variables\n\n\n\n\n\n\nIn brief: We can categorize individual cases based on their values, and we can apply a ranking or ordering.\n\n\n\nExample: Evaluating governments’ limate action\n\nPossible values: “way too much”, “too much”, “exactly right”, “too little”, “way too little”\n\nCan you come up with an example for an ordinal variable?\n\n\n\n\n\n\nPopular ways to visualize ordinal variables include:\n\nBar plots\nBoxplots"
+    "text": "Ordinal variables\n\n\n\n\n\n\nIn brief: We can categorize individual cases based on their values, and we can apply a ranking or ordering.\n\n\n\nExample: Evaluating governments’ climate action\n\nPossible values: “way too much”, “too much”, “exactly right”, “too little”, “way too little”\n\nCan you come up with an example for an ordinal variable?\n\n\n\n\n\n\nPopular ways to visualize ordinal variables include:\n\nBar plots\nBoxplots"
   },
   {
     "objectID": "slides/week-07/07-datatransform_dataviz.html#continuous-variables",
     "href": "slides/week-07/07-datatransform_dataviz.html#continuous-variables",
     "title": "Data transformation & visualization",
     "section": "Continuous variables",
-    "text": "Continuous variables\n\n\n\n\n\n\nIn brief: A variable that has equal unit differences. A one-unit increase or decrease indicates the same amount of change across all values of the variable.\n\n\n\nExample: Age\n\nA one-unit increase is the same for a 21 year old and a 55 year old. He or she is one year older.\n\nCan you come up with an example for a continuous variable?\n\n\n\n\n\n\nPopular ways to visualize continuous variables include:\n\nBar plots & boxplots\nScatterplots & histograms"
+    "text": "Continuous variables\n\n\n\n\n\n\nIn brief: A variable that has equal unit differences. A one-unit increase or decrease indicates the same amount of change across all values of the variable.\n\n\n\nExample: Age\n\nA one-unit increase is the same for a 21 year old and a 55 year old. He or she is one year older.\n\nCan you come up with an example for a continuous variable?\n\n\n\n\n\n\nPopular ways to visualize continuous variables include:\n\nBoxplots\nScatterplots & histograms"
   },
   {
     "objectID": "slides/week-07/07-datatransform_dataviz.html#bar-plots---example",

@@ -830,10 +830,12 @@ David Schweizer
 <section id="dplyrglimpse" class="slide level2">
 <h2>dplyr::glimpse</h2>
 <div class="panel-tabset">
-<ul id="tabset-4" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-4-1">Explanation</a></li></ul>
+<ul id="tabset-4" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-4-1">Explanation</a></li><li><a href="#tabset-4-2">Code</a></li></ul>
 <div class="tab-content">
 <div id="tabset-4-1">
-<p><em>glimpse()</em>: gives a first informative look at the data (especially helpful when working with data sets that contain many columns/variables). ## Code</p>
+<p><em>glimpse()</em>: gives a first informative look at the data (especially helpful when working with data sets that contain many columns/variables).</p>
+</div>
+<div id="tabset-4-2">
 <div class="cell">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a>gapminder <span class="sc">%&gt;%</span> </span>
 <span id="cb6-2"><a href="#cb6-2"></a>  <span class="fu">glimpse</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -855,10 +857,12 @@ $ gdpPercap &lt;dbl&gt; 779.4453, 820.8530, 853.1007, 836.1971, 739.9811, 786.11
 <section id="dplyrselect" class="slide level2">
 <h2>dplyr::select</h2>
 <div class="panel-tabset">
-<ul id="tabset-5" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-5-1">Explanation</a></li></ul>
+<ul id="tabset-5" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-5-1">Explanation</a></li><li><a href="#tabset-5-2">Code</a></li></ul>
 <div class="tab-content">
 <div id="tabset-5-1">
-<p><code>select()</code>: select variables to reduce or create a new dataframe to only include a subset of specific variables. ## Code</p>
+<p><code>select()</code>: select variables to reduce or create a new dataframe to only include a subset of specific variables.</p>
+</div>
+<div id="tabset-5-2">
 <div class="cell">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1"></a>gapminder_pop <span class="ot">&lt;-</span> gapminder <span class="sc">%&gt;%</span></span>
 <span id="cb8-2"><a href="#cb8-2"></a>  <span class="fu">select</span>(country, </span>
@@ -1126,7 +1130,7 @@ $ gdpPercap &lt;dbl&gt; 779.4453, 820.8530, 853.1007, 836.1971, 739.9811, 786.11
 </div>
 </div>
 </div>
-<p>Example: Evaluating governments’ limate action</p>
+<p>Example: Evaluating governments’ climate action</p>
 <ul>
 <li>Possible values: “way too much”, “too much”, “exactly right”, “too little”, “way too little”</li>
 </ul>
@@ -1171,7 +1175,7 @@ $ gdpPercap &lt;dbl&gt; 779.4453, 820.8530, 853.1007, 836.1971, 739.9811, 786.11
 <div class="callout-content">
 <p>Popular ways to visualize continuous variables include:</p>
 <ul>
-<li><p>Bar plots &amp; boxplots</p></li>
+<li><p>Boxplots</p></li>
 <li><p>Scatterplots &amp; histograms</p></li>
 </ul>
 </div>
@@ -1286,10 +1290,6 @@ $ gdpPercap &lt;dbl&gt; 779.4453, 820.8530, 853.1007, 836.1971, 739.9811, 786.11
 </div>
 <div id="tabset-6-3">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder <span class="sc">%&gt;%</span> <span class="fu">filter</span>(year<span class="sc">==</span><span class="dv">2007</span>)) <span class="sc">+</span></span>
-<span id="cb32-2"><a href="#cb32-2"></a>  <span class="fu">geom_point</span>(<span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> gdpPercap,</span>
-<span id="cb32-3"><a href="#cb32-3"></a>                           <span class="at">y =</span> lifeExp,</span>
-<span id="cb32-4"><a href="#cb32-4"></a>                           <span class="at">color =</span> continent))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <p><img data-src="07-datatransform_dataviz_files/figure-revealjs/unnamed-chunk-31-1.png" width="960"></p>
 </div>
@@ -1320,23 +1320,23 @@ $ gdpPercap &lt;dbl&gt; 779.4453, 820.8530, 853.1007, 836.1971, 739.9811, 786.11
 <div id="tabset-8-1">
 <p>The following packages are needed to reproduce the plots on the following slides.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1"></a><span class="co"># You can install and load them this way:</span></span>
-<span id="cb33-2"><a href="#cb33-2"></a><span class="fu">install.packages</span>(<span class="st">"pacman"</span>)</span>
-<span id="cb33-3"><a href="#cb33-3"></a></span>
-<span id="cb33-4"><a href="#cb33-4"></a>pacman<span class="sc">::</span><span class="fu">p_load</span>(</span>
-<span id="cb33-5"><a href="#cb33-5"></a>  <span class="st">"dplyr"</span>,       <span class="co"># data transformation &amp; pipe operator</span></span>
-<span id="cb33-6"><a href="#cb33-6"></a>  <span class="st">"ggplot2"</span>,     <span class="co"># plot data</span></span>
-<span id="cb33-7"><a href="#cb33-7"></a>  <span class="st">"gapminder"</span>,   <span class="co"># access gapminder data</span></span>
-<span id="cb33-8"><a href="#cb33-8"></a>  <span class="st">"viridis"</span>      <span class="co"># color schemes for our plots</span></span>
-<span id="cb33-9"><a href="#cb33-9"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1"></a><span class="co"># You can install and load them this way:</span></span>
+<span id="cb32-2"><a href="#cb32-2"></a><span class="fu">install.packages</span>(<span class="st">"pacman"</span>)</span>
+<span id="cb32-3"><a href="#cb32-3"></a></span>
+<span id="cb32-4"><a href="#cb32-4"></a>pacman<span class="sc">::</span><span class="fu">p_load</span>(</span>
+<span id="cb32-5"><a href="#cb32-5"></a>  <span class="st">"dplyr"</span>,       <span class="co"># data transformation &amp; pipe operator</span></span>
+<span id="cb32-6"><a href="#cb32-6"></a>  <span class="st">"ggplot2"</span>,     <span class="co"># plot data</span></span>
+<span id="cb32-7"><a href="#cb32-7"></a>  <span class="st">"gapminder"</span>,   <span class="co"># access gapminder data</span></span>
+<span id="cb32-8"><a href="#cb32-8"></a>  <span class="st">"viridis"</span>      <span class="co"># color schemes for our plots</span></span>
+<span id="cb32-9"><a href="#cb32-9"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 <div id="tabset-8-2">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder <span class="sc">%&gt;%</span> <span class="fu">filter</span>(year<span class="sc">==</span><span class="dv">2007</span>),</span>
-<span id="cb34-2"><a href="#cb34-2"></a>  <span class="fu">aes</span>(<span class="at">x =</span> gdpPercap, </span>
-<span id="cb34-3"><a href="#cb34-3"></a>      <span class="at">y =</span> lifeExp,</span>
-<span id="cb34-4"><a href="#cb34-4"></a>      <span class="at">color =</span> continent))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder <span class="sc">%&gt;%</span> <span class="fu">filter</span>(year<span class="sc">==</span><span class="dv">2007</span>),</span>
+<span id="cb33-2"><a href="#cb33-2"></a>  <span class="fu">aes</span>(<span class="at">x =</span> gdpPercap, </span>
+<span id="cb33-3"><a href="#cb33-3"></a>      <span class="at">y =</span> lifeExp,</span>
+<span id="cb33-4"><a href="#cb33-4"></a>      <span class="at">color =</span> continent))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 <div id="tabset-8-3">
@@ -1357,11 +1357,11 @@ $ gdpPercap &lt;dbl&gt; 779.4453, 820.8530, 853.1007, 836.1971, 739.9811, 786.11
 <div id="tabset-9-1">
 <p>Add points as geometry using <strong>geom_point()</strong>:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder <span class="sc">%&gt;%</span> <span class="fu">filter</span>(year<span class="sc">==</span><span class="dv">2007</span>),</span>
-<span id="cb35-2"><a href="#cb35-2"></a>  <span class="fu">aes</span>(<span class="at">x =</span> gdpPercap, </span>
-<span id="cb35-3"><a href="#cb35-3"></a>      <span class="at">y =</span> lifeExp,</span>
-<span id="cb35-4"><a href="#cb35-4"></a>      <span class="at">color =</span> continent)) <span class="sc">+</span></span>
-<span id="cb35-5"><a href="#cb35-5"></a>  <span class="fu">geom_point</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder <span class="sc">%&gt;%</span> <span class="fu">filter</span>(year<span class="sc">==</span><span class="dv">2007</span>),</span>
+<span id="cb34-2"><a href="#cb34-2"></a>  <span class="fu">aes</span>(<span class="at">x =</span> gdpPercap, </span>
+<span id="cb34-3"><a href="#cb34-3"></a>      <span class="at">y =</span> lifeExp,</span>
+<span id="cb34-4"><a href="#cb34-4"></a>      <span class="at">color =</span> continent)) <span class="sc">+</span></span>
+<span id="cb34-5"><a href="#cb34-5"></a>  <span class="fu">geom_point</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 <div id="tabset-9-2">
@@ -1382,11 +1382,11 @@ $ gdpPercap &lt;dbl&gt; 779.4453, 820.8530, 853.1007, 836.1971, 739.9811, 786.11
 <div id="tabset-10-1">
 <p>Add a scale:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder <span class="sc">%&gt;%</span> <span class="fu">filter</span>(year<span class="sc">==</span><span class="dv">2007</span>),</span>
-<span id="cb36-2"><a href="#cb36-2"></a>  <span class="fu">aes</span>(<span class="at">x =</span> gdpPercap, <span class="at">y =</span> lifeExp,</span>
-<span id="cb36-3"><a href="#cb36-3"></a>      <span class="at">color =</span> continent)) <span class="sc">+</span></span>
-<span id="cb36-4"><a href="#cb36-4"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
-<span id="cb36-5"><a href="#cb36-5"></a>  <span class="fu">scale_x_log10</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder <span class="sc">%&gt;%</span> <span class="fu">filter</span>(year<span class="sc">==</span><span class="dv">2007</span>),</span>
+<span id="cb35-2"><a href="#cb35-2"></a>  <span class="fu">aes</span>(<span class="at">x =</span> gdpPercap, <span class="at">y =</span> lifeExp,</span>
+<span id="cb35-3"><a href="#cb35-3"></a>      <span class="at">color =</span> continent)) <span class="sc">+</span></span>
+<span id="cb35-4"><a href="#cb35-4"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb35-5"><a href="#cb35-5"></a>  <span class="fu">scale_x_log10</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 <div id="tabset-10-2">
@@ -1407,13 +1407,13 @@ $ gdpPercap &lt;dbl&gt; 779.4453, 820.8530, 853.1007, 836.1971, 739.9811, 786.11
 <div id="tabset-11-1">
 <p>Add a trend line using <strong>geom_smooth()</strong></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder <span class="sc">%&gt;%</span> <span class="fu">filter</span>(year<span class="sc">==</span><span class="dv">2007</span>),</span>
-<span id="cb37-2"><a href="#cb37-2"></a>  <span class="fu">aes</span>(<span class="at">x =</span> gdpPercap, </span>
-<span id="cb37-3"><a href="#cb37-3"></a>      <span class="at">y =</span> lifeExp,</span>
-<span id="cb37-4"><a href="#cb37-4"></a>      <span class="at">color =</span> continent)) <span class="sc">+</span></span>
-<span id="cb37-5"><a href="#cb37-5"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
-<span id="cb37-6"><a href="#cb37-6"></a>  <span class="fu">scale_x_log10</span>() <span class="sc">+</span></span>
-<span id="cb37-7"><a href="#cb37-7"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder <span class="sc">%&gt;%</span> <span class="fu">filter</span>(year<span class="sc">==</span><span class="dv">2007</span>),</span>
+<span id="cb36-2"><a href="#cb36-2"></a>  <span class="fu">aes</span>(<span class="at">x =</span> gdpPercap, </span>
+<span id="cb36-3"><a href="#cb36-3"></a>      <span class="at">y =</span> lifeExp,</span>
+<span id="cb36-4"><a href="#cb36-4"></a>      <span class="at">color =</span> continent)) <span class="sc">+</span></span>
+<span id="cb36-5"><a href="#cb36-5"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb36-6"><a href="#cb36-6"></a>  <span class="fu">scale_x_log10</span>() <span class="sc">+</span></span>
+<span id="cb36-7"><a href="#cb36-7"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 <div id="tabset-11-2">
@@ -1434,14 +1434,14 @@ $ gdpPercap &lt;dbl&gt; 779.4453, 820.8530, 853.1007, 836.1971, 739.9811, 786.11
 <div id="tabset-12-1">
 <p>Add different color scale using the <strong>viridis</strong> package:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder <span class="sc">%&gt;%</span> <span class="fu">filter</span>(year<span class="sc">==</span><span class="dv">2007</span>),</span>
-<span id="cb38-2"><a href="#cb38-2"></a>  <span class="fu">aes</span>(<span class="at">x =</span> gdpPercap, </span>
-<span id="cb38-3"><a href="#cb38-3"></a>      <span class="at">y =</span> lifeExp,</span>
-<span id="cb38-4"><a href="#cb38-4"></a>      <span class="at">color =</span> continent)) <span class="sc">+</span></span>
-<span id="cb38-5"><a href="#cb38-5"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
-<span id="cb38-6"><a href="#cb38-6"></a>  <span class="fu">scale_x_log10</span>() <span class="sc">+</span></span>
-<span id="cb38-7"><a href="#cb38-7"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>) <span class="sc">+</span></span>
-<span id="cb38-8"><a href="#cb38-8"></a>  <span class="fu">scale_color_viridis_d</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder <span class="sc">%&gt;%</span> <span class="fu">filter</span>(year<span class="sc">==</span><span class="dv">2007</span>),</span>
+<span id="cb37-2"><a href="#cb37-2"></a>  <span class="fu">aes</span>(<span class="at">x =</span> gdpPercap, </span>
+<span id="cb37-3"><a href="#cb37-3"></a>      <span class="at">y =</span> lifeExp,</span>
+<span id="cb37-4"><a href="#cb37-4"></a>      <span class="at">color =</span> continent)) <span class="sc">+</span></span>
+<span id="cb37-5"><a href="#cb37-5"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb37-6"><a href="#cb37-6"></a>  <span class="fu">scale_x_log10</span>() <span class="sc">+</span></span>
+<span id="cb37-7"><a href="#cb37-7"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>) <span class="sc">+</span></span>
+<span id="cb37-8"><a href="#cb37-8"></a>  <span class="fu">scale_color_viridis_d</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 <div id="tabset-12-2">
@@ -1462,15 +1462,15 @@ $ gdpPercap &lt;dbl&gt; 779.4453, 820.8530, 853.1007, 836.1971, 739.9811, 786.11
 <div id="tabset-13-1">
 <p>Use facets:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder <span class="sc">%&gt;%</span> <span class="fu">filter</span>(year<span class="sc">==</span><span class="dv">2007</span>),</span>
-<span id="cb39-2"><a href="#cb39-2"></a>  <span class="fu">aes</span>(<span class="at">x =</span> gdpPercap, </span>
-<span id="cb39-3"><a href="#cb39-3"></a>      <span class="at">y =</span> lifeExp,</span>
-<span id="cb39-4"><a href="#cb39-4"></a>      <span class="at">color =</span> continent)) <span class="sc">+</span></span>
-<span id="cb39-5"><a href="#cb39-5"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
-<span id="cb39-6"><a href="#cb39-6"></a>  <span class="fu">scale_x_log10</span>() <span class="sc">+</span></span>
-<span id="cb39-7"><a href="#cb39-7"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>) <span class="sc">+</span></span>
-<span id="cb39-8"><a href="#cb39-8"></a>  <span class="fu">scale_color_viridis_d</span>() <span class="sc">+</span></span>
-<span id="cb39-9"><a href="#cb39-9"></a>  <span class="fu">facet_wrap</span>(<span class="fu">vars</span>(continent), <span class="at">ncol =</span> <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder <span class="sc">%&gt;%</span> <span class="fu">filter</span>(year<span class="sc">==</span><span class="dv">2007</span>),</span>
+<span id="cb38-2"><a href="#cb38-2"></a>  <span class="fu">aes</span>(<span class="at">x =</span> gdpPercap, </span>
+<span id="cb38-3"><a href="#cb38-3"></a>      <span class="at">y =</span> lifeExp,</span>
+<span id="cb38-4"><a href="#cb38-4"></a>      <span class="at">color =</span> continent)) <span class="sc">+</span></span>
+<span id="cb38-5"><a href="#cb38-5"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb38-6"><a href="#cb38-6"></a>  <span class="fu">scale_x_log10</span>() <span class="sc">+</span></span>
+<span id="cb38-7"><a href="#cb38-7"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>) <span class="sc">+</span></span>
+<span id="cb38-8"><a href="#cb38-8"></a>  <span class="fu">scale_color_viridis_d</span>() <span class="sc">+</span></span>
+<span id="cb38-9"><a href="#cb38-9"></a>  <span class="fu">facet_wrap</span>(<span class="fu">vars</span>(continent), <span class="at">ncol =</span> <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 <div id="tabset-13-2">
@@ -1491,17 +1491,17 @@ $ gdpPercap &lt;dbl&gt; 779.4453, 820.8530, 853.1007, 836.1971, 739.9811, 786.11
 <div id="tabset-14-1">
 <p>Add titles, subtitles, labels, and captions:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb40"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a href="#cb40-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder <span class="sc">%&gt;%</span> <span class="fu">filter</span>(year<span class="sc">==</span><span class="dv">2007</span>),</span>
-<span id="cb40-2"><a href="#cb40-2"></a>  <span class="fu">aes</span>(<span class="at">x =</span> gdpPercap, <span class="at">y =</span> lifeExp, <span class="at">color =</span> continent)) <span class="sc">+</span></span>
-<span id="cb40-3"><a href="#cb40-3"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
-<span id="cb40-4"><a href="#cb40-4"></a>  <span class="fu">scale_x_log10</span>() <span class="sc">+</span></span>
-<span id="cb40-5"><a href="#cb40-5"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>) <span class="sc">+</span></span>
-<span id="cb40-6"><a href="#cb40-6"></a>  <span class="fu">scale_color_viridis_d</span>() <span class="sc">+</span></span>
-<span id="cb40-7"><a href="#cb40-7"></a>  <span class="fu">facet_wrap</span>(<span class="fu">vars</span>(continent), <span class="at">ncol =</span> <span class="dv">2</span>) <span class="sc">+</span></span>
-<span id="cb40-8"><a href="#cb40-8"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"GDP per capita"</span>, <span class="at">y =</span> <span class="st">"Life expectancy"</span>, </span>
-<span id="cb40-9"><a href="#cb40-9"></a>       <span class="at">color =</span> <span class="st">"Continent"</span>,</span>
-<span id="cb40-10"><a href="#cb40-10"></a>       <span class="at">title =</span> <span class="st">"Wealth = Health?"</span>, <span class="at">subtitle =</span> <span class="st">"gdpPercap/lifeExp"</span>, </span>
-<span id="cb40-11"><a href="#cb40-11"></a>       <span class="at">caption =</span> <span class="st">"Gapminder dataset"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder <span class="sc">%&gt;%</span> <span class="fu">filter</span>(year<span class="sc">==</span><span class="dv">2007</span>),</span>
+<span id="cb39-2"><a href="#cb39-2"></a>  <span class="fu">aes</span>(<span class="at">x =</span> gdpPercap, <span class="at">y =</span> lifeExp, <span class="at">color =</span> continent)) <span class="sc">+</span></span>
+<span id="cb39-3"><a href="#cb39-3"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb39-4"><a href="#cb39-4"></a>  <span class="fu">scale_x_log10</span>() <span class="sc">+</span></span>
+<span id="cb39-5"><a href="#cb39-5"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>) <span class="sc">+</span></span>
+<span id="cb39-6"><a href="#cb39-6"></a>  <span class="fu">scale_color_viridis_d</span>() <span class="sc">+</span></span>
+<span id="cb39-7"><a href="#cb39-7"></a>  <span class="fu">facet_wrap</span>(<span class="fu">vars</span>(continent), <span class="at">ncol =</span> <span class="dv">2</span>) <span class="sc">+</span></span>
+<span id="cb39-8"><a href="#cb39-8"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"GDP per capita"</span>, <span class="at">y =</span> <span class="st">"Life expectancy"</span>, </span>
+<span id="cb39-9"><a href="#cb39-9"></a>       <span class="at">color =</span> <span class="st">"Continent"</span>,</span>
+<span id="cb39-10"><a href="#cb39-10"></a>       <span class="at">title =</span> <span class="st">"Wealth = Health?"</span>, <span class="at">subtitle =</span> <span class="st">"gdpPercap/lifeExp"</span>, </span>
+<span id="cb39-11"><a href="#cb39-11"></a>       <span class="at">caption =</span> <span class="st">"Gapminder dataset"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 <div id="tabset-14-2">
@@ -1522,18 +1522,18 @@ $ gdpPercap &lt;dbl&gt; 779.4453, 820.8530, 853.1007, 836.1971, 739.9811, 786.11
 <div id="tabset-15-1">
 <p>Add a theme:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder <span class="sc">%&gt;%</span> <span class="fu">filter</span>(year<span class="sc">==</span><span class="dv">2007</span>),</span>
-<span id="cb41-2"><a href="#cb41-2"></a>  <span class="fu">aes</span>(<span class="at">x =</span> gdpPercap, <span class="at">y =</span> lifeExp, <span class="at">color =</span> continent)) <span class="sc">+</span></span>
-<span id="cb41-3"><a href="#cb41-3"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
-<span id="cb41-4"><a href="#cb41-4"></a>  <span class="fu">scale_x_log10</span>() <span class="sc">+</span></span>
-<span id="cb41-5"><a href="#cb41-5"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>) <span class="sc">+</span></span>
-<span id="cb41-6"><a href="#cb41-6"></a>  <span class="fu">scale_color_viridis_d</span>() <span class="sc">+</span></span>
-<span id="cb41-7"><a href="#cb41-7"></a>  <span class="fu">facet_wrap</span>(<span class="fu">vars</span>(continent), <span class="at">ncol =</span> <span class="dv">2</span>) <span class="sc">+</span></span>
-<span id="cb41-8"><a href="#cb41-8"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"GDP per capita"</span>, <span class="at">y =</span> <span class="st">"Life expectancy"</span>, </span>
-<span id="cb41-9"><a href="#cb41-9"></a>       <span class="at">color =</span> <span class="st">"Continent"</span>,</span>
-<span id="cb41-10"><a href="#cb41-10"></a>       <span class="at">title =</span> <span class="st">"Wealth = Health?"</span>, <span class="at">subtitle =</span> <span class="st">"gdpPercap/lifeExp"</span>, </span>
-<span id="cb41-11"><a href="#cb41-11"></a>       <span class="at">caption =</span> <span class="st">"Gapminder dataset"</span>) <span class="sc">+</span></span>
-<span id="cb41-12"><a href="#cb41-12"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb40"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a href="#cb40-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder <span class="sc">%&gt;%</span> <span class="fu">filter</span>(year<span class="sc">==</span><span class="dv">2007</span>),</span>
+<span id="cb40-2"><a href="#cb40-2"></a>  <span class="fu">aes</span>(<span class="at">x =</span> gdpPercap, <span class="at">y =</span> lifeExp, <span class="at">color =</span> continent)) <span class="sc">+</span></span>
+<span id="cb40-3"><a href="#cb40-3"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb40-4"><a href="#cb40-4"></a>  <span class="fu">scale_x_log10</span>() <span class="sc">+</span></span>
+<span id="cb40-5"><a href="#cb40-5"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>) <span class="sc">+</span></span>
+<span id="cb40-6"><a href="#cb40-6"></a>  <span class="fu">scale_color_viridis_d</span>() <span class="sc">+</span></span>
+<span id="cb40-7"><a href="#cb40-7"></a>  <span class="fu">facet_wrap</span>(<span class="fu">vars</span>(continent), <span class="at">ncol =</span> <span class="dv">2</span>) <span class="sc">+</span></span>
+<span id="cb40-8"><a href="#cb40-8"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"GDP per capita"</span>, <span class="at">y =</span> <span class="st">"Life expectancy"</span>, </span>
+<span id="cb40-9"><a href="#cb40-9"></a>       <span class="at">color =</span> <span class="st">"Continent"</span>,</span>
+<span id="cb40-10"><a href="#cb40-10"></a>       <span class="at">title =</span> <span class="st">"Wealth = Health?"</span>, <span class="at">subtitle =</span> <span class="st">"gdpPercap/lifeExp"</span>, </span>
+<span id="cb40-11"><a href="#cb40-11"></a>       <span class="at">caption =</span> <span class="st">"Gapminder dataset"</span>) <span class="sc">+</span></span>
+<span id="cb40-12"><a href="#cb40-12"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 <div id="tabset-15-2">
@@ -1554,18 +1554,18 @@ $ gdpPercap &lt;dbl&gt; 779.4453, 820.8530, 853.1007, 836.1971, 739.9811, 786.11
 <div id="tabset-16-1">
 <p>There are many themes. Have a look <a href="https://ggplot2.tidyverse.org/reference/ggtheme.html">here</a>.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb42"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder <span class="sc">%&gt;%</span> <span class="fu">filter</span>(year<span class="sc">==</span><span class="dv">2007</span>),</span>
-<span id="cb42-2"><a href="#cb42-2"></a>  <span class="fu">aes</span>(<span class="at">x =</span> gdpPercap, <span class="at">y =</span> lifeExp, <span class="at">color =</span> continent)) <span class="sc">+</span></span>
-<span id="cb42-3"><a href="#cb42-3"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
-<span id="cb42-4"><a href="#cb42-4"></a>  <span class="fu">scale_x_log10</span>() <span class="sc">+</span></span>
-<span id="cb42-5"><a href="#cb42-5"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>) <span class="sc">+</span></span>
-<span id="cb42-6"><a href="#cb42-6"></a>  <span class="fu">scale_color_viridis_d</span>() <span class="sc">+</span></span>
-<span id="cb42-7"><a href="#cb42-7"></a>  <span class="fu">facet_wrap</span>(<span class="fu">vars</span>(continent), <span class="at">ncol =</span> <span class="dv">2</span>) <span class="sc">+</span></span>
-<span id="cb42-8"><a href="#cb42-8"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"GDP per capita"</span>, <span class="at">y =</span> <span class="st">"Life expectancy"</span>, </span>
-<span id="cb42-9"><a href="#cb42-9"></a>       <span class="at">color =</span> <span class="st">"Continent"</span>,</span>
-<span id="cb42-10"><a href="#cb42-10"></a>       <span class="at">title =</span> <span class="st">"Wealth = Health?"</span>, <span class="at">subtitle =</span> <span class="st">"gdpPercap/lifeExp"</span>, </span>
-<span id="cb42-11"><a href="#cb42-11"></a>       <span class="at">caption =</span> <span class="st">"Gapminder dataset"</span>) <span class="sc">+</span></span>
-<span id="cb42-12"><a href="#cb42-12"></a>  <span class="fu">theme_dark</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder <span class="sc">%&gt;%</span> <span class="fu">filter</span>(year<span class="sc">==</span><span class="dv">2007</span>),</span>
+<span id="cb41-2"><a href="#cb41-2"></a>  <span class="fu">aes</span>(<span class="at">x =</span> gdpPercap, <span class="at">y =</span> lifeExp, <span class="at">color =</span> continent)) <span class="sc">+</span></span>
+<span id="cb41-3"><a href="#cb41-3"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb41-4"><a href="#cb41-4"></a>  <span class="fu">scale_x_log10</span>() <span class="sc">+</span></span>
+<span id="cb41-5"><a href="#cb41-5"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>) <span class="sc">+</span></span>
+<span id="cb41-6"><a href="#cb41-6"></a>  <span class="fu">scale_color_viridis_d</span>() <span class="sc">+</span></span>
+<span id="cb41-7"><a href="#cb41-7"></a>  <span class="fu">facet_wrap</span>(<span class="fu">vars</span>(continent), <span class="at">ncol =</span> <span class="dv">2</span>) <span class="sc">+</span></span>
+<span id="cb41-8"><a href="#cb41-8"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"GDP per capita"</span>, <span class="at">y =</span> <span class="st">"Life expectancy"</span>, </span>
+<span id="cb41-9"><a href="#cb41-9"></a>       <span class="at">color =</span> <span class="st">"Continent"</span>,</span>
+<span id="cb41-10"><a href="#cb41-10"></a>       <span class="at">title =</span> <span class="st">"Wealth = Health?"</span>, <span class="at">subtitle =</span> <span class="st">"gdpPercap/lifeExp"</span>, </span>
+<span id="cb41-11"><a href="#cb41-11"></a>       <span class="at">caption =</span> <span class="st">"Gapminder dataset"</span>) <span class="sc">+</span></span>
+<span id="cb41-12"><a href="#cb41-12"></a>  <span class="fu">theme_dark</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 <div id="tabset-16-2">
@@ -1586,16 +1586,16 @@ $ gdpPercap &lt;dbl&gt; 779.4453, 820.8530, 853.1007, 836.1971, 739.9811, 786.11
 <div id="tabset-17-1">
 <p>Other geometries: Histograms</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a href="#cb43-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> <span class="fu">filter</span>(gapminder, year <span class="sc">%in%</span> <span class="fu">c</span>(<span class="dv">2007</span>)),</span>
-<span id="cb43-2"><a href="#cb43-2"></a><span class="fu">aes</span>(<span class="at">x =</span> lifeExp, </span>
-<span id="cb43-3"><a href="#cb43-3"></a>    <span class="at">fill =</span> continent)) <span class="sc">+</span></span>
-<span id="cb43-4"><a href="#cb43-4"></a><span class="fu">geom_histogram</span>(<span class="at">binwidth =</span> <span class="dv">5</span>, </span>
-<span id="cb43-5"><a href="#cb43-5"></a>               <span class="at">color =</span> <span class="st">"grey"</span>) <span class="sc">+</span></span>
-<span id="cb43-6"><a href="#cb43-6"></a><span class="fu">scale_fill_viridis_d</span>() <span class="sc">+</span></span>
-<span id="cb43-7"><a href="#cb43-7"></a><span class="fu">facet_wrap</span>(<span class="fu">vars</span>(continent), </span>
-<span id="cb43-8"><a href="#cb43-8"></a>           <span class="at">ncol =</span> <span class="dv">2</span>) <span class="sc">+</span></span>
-<span id="cb43-9"><a href="#cb43-9"></a><span class="fu">guides</span>(<span class="at">fill =</span> <span class="st">"none"</span>) <span class="sc">+</span></span>
-<span id="cb43-10"><a href="#cb43-10"></a><span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb42"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> <span class="fu">filter</span>(gapminder, year <span class="sc">%in%</span> <span class="fu">c</span>(<span class="dv">2007</span>)),</span>
+<span id="cb42-2"><a href="#cb42-2"></a><span class="fu">aes</span>(<span class="at">x =</span> lifeExp, </span>
+<span id="cb42-3"><a href="#cb42-3"></a>    <span class="at">fill =</span> continent)) <span class="sc">+</span></span>
+<span id="cb42-4"><a href="#cb42-4"></a><span class="fu">geom_histogram</span>(<span class="at">binwidth =</span> <span class="dv">5</span>, </span>
+<span id="cb42-5"><a href="#cb42-5"></a>               <span class="at">color =</span> <span class="st">"grey"</span>) <span class="sc">+</span></span>
+<span id="cb42-6"><a href="#cb42-6"></a><span class="fu">scale_fill_viridis_d</span>() <span class="sc">+</span></span>
+<span id="cb42-7"><a href="#cb42-7"></a><span class="fu">facet_wrap</span>(<span class="fu">vars</span>(continent), </span>
+<span id="cb42-8"><a href="#cb42-8"></a>           <span class="at">ncol =</span> <span class="dv">2</span>) <span class="sc">+</span></span>
+<span id="cb42-9"><a href="#cb42-9"></a><span class="fu">guides</span>(<span class="at">fill =</span> <span class="st">"none"</span>) <span class="sc">+</span></span>
+<span id="cb42-10"><a href="#cb42-10"></a><span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 <div id="tabset-17-2">
@@ -1616,16 +1616,16 @@ $ gdpPercap &lt;dbl&gt; 779.4453, 820.8530, 853.1007, 836.1971, 739.9811, 786.11
 <div id="tabset-18-1">
 <p>Other geometries: Box plots</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb44-1"><a href="#cb44-1"></a>colors <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"red"</span>, <span class="st">"orange"</span>, <span class="st">"yellow"</span>, <span class="st">"green"</span>, <span class="st">"blue"</span>)</span>
-<span id="cb44-2"><a href="#cb44-2"></a></span>
-<span id="cb44-3"><a href="#cb44-3"></a><span class="fu">ggplot</span>(<span class="at">data =</span> <span class="fu">filter</span>(gapminder, year <span class="sc">%in%</span> <span class="fu">c</span>(<span class="dv">2007</span>)),</span>
-<span id="cb44-4"><a href="#cb44-4"></a>  <span class="fu">aes</span>(<span class="at">x =</span> continent, </span>
-<span id="cb44-5"><a href="#cb44-5"></a>      <span class="at">y =</span> lifeExp,</span>
-<span id="cb44-6"><a href="#cb44-6"></a>      <span class="at">fill =</span> continent)) <span class="sc">+</span></span>
-<span id="cb44-7"><a href="#cb44-7"></a>  <span class="fu">geom_boxplot</span>(<span class="at">alpha =</span> <span class="fl">0.5</span>) <span class="sc">+</span></span>
-<span id="cb44-8"><a href="#cb44-8"></a>  <span class="fu">scale_fill_manual</span>(<span class="at">values =</span> colors) <span class="sc">+</span></span>
-<span id="cb44-9"><a href="#cb44-9"></a>  <span class="fu">guides</span>(<span class="at">fill =</span> <span class="st">"none"</span>) <span class="sc">+</span></span>
-<span id="cb44-10"><a href="#cb44-10"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a href="#cb43-1"></a>colors <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"red"</span>, <span class="st">"orange"</span>, <span class="st">"yellow"</span>, <span class="st">"green"</span>, <span class="st">"blue"</span>)</span>
+<span id="cb43-2"><a href="#cb43-2"></a></span>
+<span id="cb43-3"><a href="#cb43-3"></a><span class="fu">ggplot</span>(<span class="at">data =</span> <span class="fu">filter</span>(gapminder, year <span class="sc">%in%</span> <span class="fu">c</span>(<span class="dv">2007</span>)),</span>
+<span id="cb43-4"><a href="#cb43-4"></a>  <span class="fu">aes</span>(<span class="at">x =</span> continent, </span>
+<span id="cb43-5"><a href="#cb43-5"></a>      <span class="at">y =</span> lifeExp,</span>
+<span id="cb43-6"><a href="#cb43-6"></a>      <span class="at">fill =</span> continent)) <span class="sc">+</span></span>
+<span id="cb43-7"><a href="#cb43-7"></a>  <span class="fu">geom_boxplot</span>(<span class="at">alpha =</span> <span class="fl">0.5</span>) <span class="sc">+</span></span>
+<span id="cb43-8"><a href="#cb43-8"></a>  <span class="fu">scale_fill_manual</span>(<span class="at">values =</span> colors) <span class="sc">+</span></span>
+<span id="cb43-9"><a href="#cb43-9"></a>  <span class="fu">guides</span>(<span class="at">fill =</span> <span class="st">"none"</span>) <span class="sc">+</span></span>
+<span id="cb43-10"><a href="#cb43-10"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 <div id="tabset-18-2">
@@ -1646,15 +1646,15 @@ $ gdpPercap &lt;dbl&gt; 779.4453, 820.8530, 853.1007, 836.1971, 739.9811, 786.11
 <div id="tabset-19-1">
 <p>Other geometries: Line plots</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb45"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb45-1"><a href="#cb45-1"></a><span class="fu">ggplot</span>(gapminder, <span class="fu">aes</span>(<span class="at">x =</span> year, <span class="at">y =</span> lifeExp, <span class="at">group =</span> country)) <span class="sc">+</span></span>
-<span id="cb45-2"><a href="#cb45-2"></a>  <span class="fu">geom_line</span>(<span class="at">alpha =</span> <span class="fl">0.2</span>, <span class="at">color=</span> <span class="st">"grey"</span>) <span class="sc">+</span></span>
-<span id="cb45-3"><a href="#cb45-3"></a>  <span class="fu">geom_line</span>(<span class="at">data =</span> gapminder <span class="sc">%&gt;%</span></span>
-<span id="cb45-4"><a href="#cb45-4"></a>    <span class="fu">filter</span>(country <span class="sc">%in%</span> <span class="fu">c</span>(</span>
-<span id="cb45-5"><a href="#cb45-5"></a>    <span class="st">"Germany"</span>,</span>
-<span id="cb45-6"><a href="#cb45-6"></a>    <span class="st">"India"</span>,</span>
-<span id="cb45-7"><a href="#cb45-7"></a>    <span class="st">"Rwanda"</span>)),</span>
-<span id="cb45-8"><a href="#cb45-8"></a>    <span class="at">lwd =</span> <span class="dv">1</span>, <span class="at">color =</span> <span class="st">"red"</span>) <span class="sc">+</span> </span>
-<span id="cb45-9"><a href="#cb45-9"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb44-1"><a href="#cb44-1"></a><span class="fu">ggplot</span>(gapminder, <span class="fu">aes</span>(<span class="at">x =</span> year, <span class="at">y =</span> lifeExp, <span class="at">group =</span> country)) <span class="sc">+</span></span>
+<span id="cb44-2"><a href="#cb44-2"></a>  <span class="fu">geom_line</span>(<span class="at">alpha =</span> <span class="fl">0.2</span>, <span class="at">color=</span> <span class="st">"grey"</span>) <span class="sc">+</span></span>
+<span id="cb44-3"><a href="#cb44-3"></a>  <span class="fu">geom_line</span>(<span class="at">data =</span> gapminder <span class="sc">%&gt;%</span></span>
+<span id="cb44-4"><a href="#cb44-4"></a>    <span class="fu">filter</span>(country <span class="sc">%in%</span> <span class="fu">c</span>(</span>
+<span id="cb44-5"><a href="#cb44-5"></a>    <span class="st">"Germany"</span>,</span>
+<span id="cb44-6"><a href="#cb44-6"></a>    <span class="st">"India"</span>,</span>
+<span id="cb44-7"><a href="#cb44-7"></a>    <span class="st">"Rwanda"</span>)),</span>
+<span id="cb44-8"><a href="#cb44-8"></a>    <span class="at">lwd =</span> <span class="dv">1</span>, <span class="at">color =</span> <span class="st">"red"</span>) <span class="sc">+</span> </span>
+<span id="cb44-9"><a href="#cb44-9"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 <div id="tabset-19-2">
