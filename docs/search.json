@@ -4520,5 +4520,425 @@
     "title": "Measurement & Data Collection",
     "section": "Datasets I use in my research",
     "text": "Datasets I use in my research\n\nThe German Longitudinal Election Study\nThe European Social Survey\nParlGov\nThe manifesto project\nThe PopuList"
+  },
+  {
+    "objectID": "slides/week-07/07-datatransform_dataviz.html#plan-for-today",
+    "href": "slides/week-07/07-datatransform_dataviz.html#plan-for-today",
+    "title": "Data transformation & visualization",
+    "section": "Plan for today",
+    "text": "Plan for today\n\nPart IBreakPart II\n\n\n\nData transformation\n\nReminder: How to install R & RStudio\nHow to import data\nWhat is tidy data\nHow to transform data using the tidyverse & the dplyr package\n\nYour turn: Tutorials\n\n\n\n⏸️ 15 minute break: Get some fresh air, coffee, …\n\n\n\nData visualization\n\nHow to visualize data using ggplot\n\nYour turn: Tutorial"
+  },
+  {
+    "objectID": "slides/week-07/07-datatransform_dataviz.html#importing-data",
+    "href": "slides/week-07/07-datatransform_dataviz.html#importing-data",
+    "title": "Data transformation & visualization",
+    "section": "Importing data",
+    "text": "Importing data\n\nR: use load(\"filename.RData\") or readRDS(\"filename.RDS\").\nExcel: e.g., load library(\"xlsx\") and use read.xlsx(\"filename.xlsx\").\nStata: e.g., load library(\"haven\") and use read_dta(\"filename.dta\").\n\nConsult the R documentation (e.g. type ?read.xlsx) to get an overview about options (e.g. sheetIndex or startRow)."
+  },
+  {
+    "objectID": "slides/week-07/07-datatransform_dataviz.html#importing-data-manually",
+    "href": "slides/week-07/07-datatransform_dataviz.html#importing-data-manually",
+    "title": "Data transformation & visualization",
+    "section": "Importing data manually",
+    "text": "Importing data manually\n\nChoose file formatChoose file"
+  },
+  {
+    "objectID": "slides/week-07/07-datatransform_dataviz.html#built-in-data",
+    "href": "slides/week-07/07-datatransform_dataviz.html#built-in-data",
+    "title": "Data transformation & visualization",
+    "section": "Built-in data",
+    "text": "Built-in data\nThere are also many built-in data sets in R. You can have a look at them by using data()."
+  },
+  {
+    "objectID": "slides/week-07/07-datatransform_dataviz.html#gapminder-data",
+    "href": "slides/week-07/07-datatransform_dataviz.html#gapminder-data",
+    "title": "Data transformation & visualization",
+    "section": "Gapminder data",
+    "text": "Gapminder data\nHowever, we will use the gapminder data set during this session. Therefore, we have to install the package install.packages(\"gapminder\") first and load it with library(\"gapminder\").\n\n\n\n\n\ncountry\ncontinent\nyear\nlifeExp\npop\ngdpPercap\n\n\n\n\nAfghanistan\nAsia\n2007\n43.828\n31889923\n974.5803\n\n\nAlbania\nEurope\n2007\n76.423\n3600523\n5937.0295\n\n\nAlgeria\nAfrica\n2007\n72.301\n33333216\n6223.3675\n\n\nAngola\nAfrica\n2007\n42.731\n12420476\n4797.2313"
+  },
+  {
+    "objectID": "slides/week-07/07-datatransform_dataviz.html#transform-data",
+    "href": "slides/week-07/07-datatransform_dataviz.html#transform-data",
+    "title": "Data transformation & visualization",
+    "section": "Transform data",
+    "text": "Transform data\n“Getting the data into shape” for exploration and analysis.\nCommon steps for data transformation include:\n\nrenaming variables\nselecting a subset of variables\nfiltering a subset of cases\nrecoding variables or values (also missing values)\ncreating new variables\n\n80% of your time goes into data transformation and 20% into analysis"
+  },
+  {
+    "objectID": "slides/week-07/07-datatransform_dataviz.html#tidyverse",
+    "href": "slides/week-07/07-datatransform_dataviz.html#tidyverse",
+    "title": "Data transformation & visualization",
+    "section": "Tidyverse",
+    "text": "Tidyverse\n\n\nThe tidyverse is a collection of R packages designed for data science. All packages share an underlying design philosophy, grammar, and data structures (Tidyverse website).\nIt is a coherent system of packages for data manipulation, exploration and visualization that share a common design philosophy (Rickert, 2017)."
+  },
+  {
+    "objectID": "slides/week-07/07-datatransform_dataviz.html#tidyverse---benefits",
+    "href": "slides/week-07/07-datatransform_dataviz.html#tidyverse---benefits",
+    "title": "Data transformation & visualization",
+    "section": "Tidyverse - Benefits",
+    "text": "Tidyverse - Benefits\nData transformation with base R is possible, but not as intuitive and more verbose.\n\nMore difficult to learn, remember and read\n\nTidyverse syntax is designed to increase human-readability.\n\nAttractive for R beginners as it can facilitate the experience of self-efficacy (see Robinson, 2017)\n\n\n\nThe tidyverse also aims for consistency (e.g., data frame as first argument and output)"
+  },
+  {
+    "objectID": "slides/week-07/07-datatransform_dataviz.html#tidyverse---caution",
+    "href": "slides/week-07/07-datatransform_dataviz.html#tidyverse---caution",
+    "title": "Data transformation & visualization",
+    "section": "Tidyverse - Caution",
+    "text": "Tidyverse - Caution\nOften, tidyverse functions are under development:\n\nThey change and can potentially break your code\nExample: Converting tables into long or wide format\n\nYou can learn more about the tidyverse lifecycle in this talk by Hadley Wickham."
+  },
+  {
+    "objectID": "slides/week-07/07-datatransform_dataviz.html#tidyverse-1",
+    "href": "slides/week-07/07-datatransform_dataviz.html#tidyverse-1",
+    "title": "Data transformation & visualization",
+    "section": "Tidyverse",
+    "text": "Tidyverse\nInstall all tidyverse packages at once (here is the full list of tidyverse packages)\n\ninstall.packages(\"tidyverse\")\n\n\nLoad core tidyverse packages To save time and reduce namespace conflicts you can also load tidyverse packages individually (e.g., dplyr, ggplot)\n\nlibrary(\"dplyr\")"
+  },
+  {
+    "objectID": "slides/week-07/07-datatransform_dataviz.html#tidyverse-concepts",
+    "href": "slides/week-07/07-datatransform_dataviz.html#tidyverse-concepts",
+    "title": "Data transformation & visualization",
+    "section": "Tidyverse: Concepts",
+    "text": "Tidyverse: Concepts\nThere is much more to the tidyverse, but two important concepts that you should be familiar with, if you want to use it, are:\n\nTidy data\nPipes"
+  },
+  {
+    "objectID": "slides/week-07/07-datatransform_dataviz.html#tidy-data",
+    "href": "slides/week-07/07-datatransform_dataviz.html#tidy-data",
+    "title": "Data transformation & visualization",
+    "section": "Tidy data",
+    "text": "Tidy data\nThe data should be in a so-called “tidy” format for ggplot and the tidyverse’s packages in general. Tidy refers to the structure of the data.\n\nVariablesObservationsValues\n\n\nEach variable has its own column.\n\n\n\n\n\n\n\nEach observation has its own row.\n\n\n\n\n\n\n\nEach value has its own cell."
+  },
+  {
+    "objectID": "slides/week-07/07-datatransform_dataviz.html#wide-vs.-long",
+    "href": "slides/week-07/07-datatransform_dataviz.html#wide-vs.-long",
+    "title": "Data transformation & visualization",
+    "section": "Wide vs. Long",
+    "text": "Wide vs. Long"
+  },
+  {
+    "objectID": "slides/week-07/07-datatransform_dataviz.html#example-untidy-data",
+    "href": "slides/week-07/07-datatransform_dataviz.html#example-untidy-data",
+    "title": "Data transformation & visualization",
+    "section": "Example: Untidy data",
+    "text": "Example: Untidy data\nUntidy V-Dem data\n\n\n\n\n\nCountry\niso3c\nCOWcode\nYear\nElectoral\nLiberal\nParticipatory\nDeliberative\nEgalitarian\n\n\n\n\nMexico\nMEX\n70\n1789\n0.026\n0.041\n0.007\nNA\nNA\n\n\nMexico\nMEX\n70\n1790\n0.026\n0.041\n0.007\nNA\nNA\n\n\nMexico\nMEX\n70\n1791\n0.026\n0.041\n0.007\nNA\nNA\n\n\nMexico\nMEX\n70\n1792\n0.026\n0.041\n0.007\nNA\nNA\n\n\nMexico\nMEX\n70\n1793\n0.026\n0.041\n0.007\nNA\nNA"
+  },
+  {
+    "objectID": "slides/week-07/07-datatransform_dataviz.html#example-tidy-data",
+    "href": "slides/week-07/07-datatransform_dataviz.html#example-tidy-data",
+    "title": "Data transformation & visualization",
+    "section": "Example: Tidy data",
+    "text": "Example: Tidy data\nTidy version of the V-Dem data\n\n\n\n\n\nCountry\niso3c\nCOWcode\nYear\nDimension\nscore\n\n\n\n\nMexico\nMEX\n70\n1789\nElectoral\n0.026\n\n\nMexico\nMEX\n70\n1790\nElectoral\n0.026\n\n\nMexico\nMEX\n70\n1791\nElectoral\n0.026\n\n\nMexico\nMEX\n70\n1792\nElectoral\n0.026\n\n\nMexico\nMEX\n70\n1793\nElectoral\n0.026"
+  },
+  {
+    "objectID": "slides/week-07/07-datatransform_dataviz.html#pipes-1",
+    "href": "slides/week-07/07-datatransform_dataviz.html#pipes-1",
+    "title": "Data transformation & visualization",
+    "section": "Pipes",
+    "text": "Pipes\nThe %&gt;% pipe used in the tidyverse is part of the magrittr package which also includes other specialized types of pipes.\n\nRStudio offers a keyboard shortcut for inserting the %&gt;% pipe: Ctrl + Shift + M (Windows & Linux)/Cmd + Shift + M (Mac)\nSince version 4.1.0, base R also offers its own pipe |&gt;, which is similar to but not the same as the %&gt;% pipe"
+  },
+  {
+    "objectID": "slides/week-07/07-datatransform_dataviz.html#citing-free-and-open-source-software",
+    "href": "slides/week-07/07-datatransform_dataviz.html#citing-free-and-open-source-software",
+    "title": "Data transformation & visualization",
+    "section": "Citing free and open-source software",
+    "text": "Citing free and open-source software\n\ncitation()\n\n\nTo cite R in publications use:\n\n  R Core Team (2022). R: A language and environment for statistical\n  computing. R Foundation for Statistical Computing, Vienna, Austria.\n  URL https://www.R-project.org/.\n\nEin BibTeX-Eintrag für LaTeX-Benutzer ist\n\n  @Manual{,\n    title = {R: A Language and Environment for Statistical Computing},\n    author = {{R Core Team}},\n    organization = {R Foundation for Statistical Computing},\n    address = {Vienna, Austria},\n    year = {2022},\n    url = {https://www.R-project.org/},\n  }\n\nWe have invested a lot of time and effort in creating R, please cite it\nwhen using it for data analysis. See also 'citation(\"pkgname\")' for\nciting R packages."
+  },
+  {
+    "objectID": "slides/week-07/07-datatransform_dataviz.html#back-to-gapminder-tidyverse",
+    "href": "slides/week-07/07-datatransform_dataviz.html#back-to-gapminder-tidyverse",
+    "title": "Data transformation & visualization",
+    "section": "Back to Gapminder & tidyverse",
+    "text": "Back to Gapminder & tidyverse\nThe tidyverse examples in the following will make use of functions from the dplyr package:\n\ndplyr functions are verbs that signal an action\nfirst argument is always the a data frame\nthe output is also (normally) a data frame (tibble)\ncolumns (= variables in a tidy data frame) can be referenced without quotation marks (non-standard evaluation)\nactions (verbs) can be applied to columns (variables) and rows (cases/observations)"
+  },
+  {
+    "objectID": "slides/week-07/07-datatransform_dataviz.html#dplyrglimpse",
+    "href": "slides/week-07/07-datatransform_dataviz.html#dplyrglimpse",
+    "title": "Data transformation & visualization",
+    "section": "dplyr::glimpse",
+    "text": "dplyr::glimpse\n\nExplanation\n\n\nglimpse(): gives a first informative look at the data (especially helpful when working with data sets that contain many columns/variables). ## Code\n\ngapminder %&gt;% \n  glimpse()\n\nRows: 1,704\nColumns: 6\n$ country   &lt;fct&gt; \"Afghanistan\", \"Afghanistan\", \"Afghanistan\", \"Afghanistan\", …\n$ continent &lt;fct&gt; Asia, Asia, Asia, Asia, Asia, Asia, Asia, Asia, Asia, Asia, …\n$ year      &lt;int&gt; 1952, 1957, 1962, 1967, 1972, 1977, 1982, 1987, 1992, 1997, …\n$ lifeExp   &lt;dbl&gt; 28.801, 30.332, 31.997, 34.020, 36.088, 38.438, 39.854, 40.8…\n$ pop       &lt;int&gt; 8425333, 9240934, 10267083, 11537966, 13079460, 14880372, 12…\n$ gdpPercap &lt;dbl&gt; 779.4453, 820.8530, 853.1007, 836.1971, 739.9811, 786.1134, …"
+  },
+  {
+    "objectID": "slides/week-07/07-datatransform_dataviz.html#dplyrselect",
+    "href": "slides/week-07/07-datatransform_dataviz.html#dplyrselect",
+    "title": "Data transformation & visualization",
+    "section": "dplyr::select",
+    "text": "dplyr::select\n\nExplanation\n\n\nselect(): select variables to reduce or create a new dataframe to only include a subset of specific variables. ## Code\n\ngapminder_pop &lt;- gapminder %&gt;%\n  select(country, \n         year, \n         pop)"
+  },
+  {
+    "objectID": "slides/week-07/07-datatransform_dataviz.html#dplyr-select---range-of-variables",
+    "href": "slides/week-07/07-datatransform_dataviz.html#dplyr-select---range-of-variables",
+    "title": "Data transformation & visualization",
+    "section": "dplyr:: select - Range of variables",
+    "text": "dplyr:: select - Range of variables\n\n\n\ngapminder_lifeExp_1 &lt;- gapminder %&gt;%\n  select(country: lifeExp)\n\n\n\n# A tibble: 1,704 × 4\n   country     continent  year lifeExp\n   &lt;fct&gt;       &lt;fct&gt;     &lt;int&gt;   &lt;dbl&gt;\n 1 Afghanistan Asia       1952    28.8\n 2 Afghanistan Asia       1957    30.3\n 3 Afghanistan Asia       1962    32.0\n 4 Afghanistan Asia       1967    34.0\n 5 Afghanistan Asia       1972    36.1\n 6 Afghanistan Asia       1977    38.4\n 7 Afghanistan Asia       1982    39.9\n 8 Afghanistan Asia       1987    40.8\n 9 Afghanistan Asia       1992    41.7\n10 Afghanistan Asia       1997    41.8\n# ℹ 1,694 more rows\n\n\n\n\ngapminder_lifeExp_2 &lt;- gapminder %&gt;%\n  select(1:4)\n\n\n\n# A tibble: 1,704 × 4\n   country     continent  year lifeExp\n   &lt;fct&gt;       &lt;fct&gt;     &lt;int&gt;   &lt;dbl&gt;\n 1 Afghanistan Asia       1952    28.8\n 2 Afghanistan Asia       1957    30.3\n 3 Afghanistan Asia       1962    32.0\n 4 Afghanistan Asia       1967    34.0\n 5 Afghanistan Asia       1972    36.1\n 6 Afghanistan Asia       1977    38.4\n 7 Afghanistan Asia       1982    39.9\n 8 Afghanistan Asia       1987    40.8\n 9 Afghanistan Asia       1992    41.7\n10 Afghanistan Asia       1997    41.8\n# ℹ 1,694 more rows"
+  },
+  {
+    "objectID": "slides/week-07/07-datatransform_dataviz.html#dplyr-select---unselect-variables",
+    "href": "slides/week-07/07-datatransform_dataviz.html#dplyr-select---unselect-variables",
+    "title": "Data transformation & visualization",
+    "section": "dplyr:: select - Unselect variables",
+    "text": "dplyr:: select - Unselect variables\n\ngapminder %&gt;%\n  select(-c(continent, lifeExp, gdpPercap))\n\n# A tibble: 1,704 × 3\n   country      year      pop\n   &lt;fct&gt;       &lt;int&gt;    &lt;int&gt;\n 1 Afghanistan  1952  8425333\n 2 Afghanistan  1957  9240934\n 3 Afghanistan  1962 10267083\n 4 Afghanistan  1967 11537966\n 5 Afghanistan  1972 13079460\n 6 Afghanistan  1977 14880372\n 7 Afghanistan  1982 12881816\n 8 Afghanistan  1987 13867957\n 9 Afghanistan  1992 16317921\n10 Afghanistan  1997 22227415\n# ℹ 1,694 more rows"
+  },
+  {
+    "objectID": "slides/week-07/07-datatransform_dataviz.html#dplyrrename",
+    "href": "slides/week-07/07-datatransform_dataviz.html#dplyrrename",
+    "title": "Data transformation & visualization",
+    "section": "dplyr::rename",
+    "text": "dplyr::rename\nWe can rename variables using the rename function\n\ngapminder_new &lt;- gapminder %&gt;% \n  rename(Country = country, \n  # new_name = old_name\n  Continent = continent)\nnames(gapminder_new)\n\n[1] \"Country\"   \"Continent\" \"year\"      \"lifeExp\"   \"pop\"       \"gdpPercap\""
+  },
+  {
+    "objectID": "slides/week-07/07-datatransform_dataviz.html#dplyr---select-and-rename-in-one-step",
+    "href": "slides/week-07/07-datatransform_dataviz.html#dplyr---select-and-rename-in-one-step",
+    "title": "Data transformation & visualization",
+    "section": "dplyr - select and rename in one step",
+    "text": "dplyr - select and rename in one step\n\ngapminder_new &lt;- gapminder %&gt;% \n  select(Country = country, \n  Continent = continent,\n  Year = year,\n  LifeExp = lifeExp,\n  Population = pop)\nnames(gapminder_new)\n\n[1] \"Country\"    \"Continent\"  \"Year\"       \"LifeExp\"    \"Population\""
+  },
+  {
+    "objectID": "slides/week-07/07-datatransform_dataviz.html#exercise-1",
+    "href": "slides/week-07/07-datatransform_dataviz.html#exercise-1",
+    "title": "Data transformation & visualization",
+    "section": "Exercise 1",
+    "text": "Exercise 1\n\nImport the Gapminder data into R\nTake a look at the data with the glimpse or header function\nSelect a subset of the data\nRename the columns\nBonus: Select and rename in one step"
+  },
+  {
+    "objectID": "slides/week-07/07-datatransform_dataviz.html#dplyrfilter",
+    "href": "slides/week-07/07-datatransform_dataviz.html#dplyrfilter",
+    "title": "Data transformation & visualization",
+    "section": "dplyr::filter",
+    "text": "dplyr::filter\nThe dplyr solution for filtering rows/observations is filter():\n\ngapminder_germany &lt;- gapminder %&gt;%\n  filter(country == \"Germany\")\n\nWe can also filter based on multiple conditions (by default: logical AND):\n\ngapminder_germany &lt;- gapminder %&gt;%\n  filter(country == \"Germany\", year &gt; 2000)\n\nLogical OR:\n\ngapminder_germany &lt;- gapminder %&gt;%\n  filter(country == \"Germany\"|\n              year &gt; 2000)"
+  },
+  {
+    "objectID": "slides/week-07/07-datatransform_dataviz.html#dplyrmutate",
+    "href": "slides/week-07/07-datatransform_dataviz.html#dplyrmutate",
+    "title": "Data transformation & visualization",
+    "section": "dplyr::mutate",
+    "text": "dplyr::mutate\nThe dplyr package provides a very versatile function for creating and transforming variables: mutate(), which you can also use to create a new variable that is a constant:\n\ngapminder &lt;- gapminder %&gt;%\n  mutate(constant = 1)\n\nWe can also apply a simple transformation to an existing variable:\n\ngapminder &lt;- gapminder %&gt;%\n  mutate(pop_new = pop / 1000)\n\nOr change the data type of an existing variable:\n\ngapminder &lt;- gapminder %&gt;%\n  mutate(pop_char = as.character(pop))"
+  },
+  {
+    "objectID": "slides/week-07/07-datatransform_dataviz.html#dplyrarrange",
+    "href": "slides/week-07/07-datatransform_dataviz.html#dplyrarrange",
+    "title": "Data transformation & visualization",
+    "section": "dplyr::arrange",
+    "text": "dplyr::arrange\narrange() allows us to sort a dataframe according to a variable:\n\ngapminder %&gt;%\n  arrange(desc(gdpPercap)) %&gt;% \n  head(n=5)\n\n# A tibble: 5 × 9\n  country continent  year lifeExp    pop gdpPercap constant pop_new pop_char\n  &lt;fct&gt;   &lt;fct&gt;     &lt;int&gt;   &lt;dbl&gt;  &lt;int&gt;     &lt;dbl&gt;    &lt;dbl&gt;   &lt;dbl&gt; &lt;chr&gt;   \n1 Kuwait  Asia       1957    58.0 212846   113523.        1    213. 212846  \n2 Kuwait  Asia       1972    67.7 841934   109348.        1    842. 841934  \n3 Kuwait  Asia       1952    55.6 160000   108382.        1    160  160000  \n4 Kuwait  Asia       1962    60.5 358266    95458.        1    358. 358266  \n5 Kuwait  Asia       1967    64.6 575003    80895.        1    575. 575003"
+  },
+  {
+    "objectID": "slides/week-07/07-datatransform_dataviz.html#dylyr---group_by-summarise",
+    "href": "slides/week-07/07-datatransform_dataviz.html#dylyr---group_by-summarise",
+    "title": "Data transformation & visualization",
+    "section": "dylyr - group_by & summarise",
+    "text": "dylyr - group_by & summarise\nFurther, we can (for example) group the data by continent and then return the mean of life expectancy by continent:\n\ngapminder %&gt;%\n  select(continent, lifeExp, year) %&gt;%\n  filter(year==2007) %&gt;%\n  group_by(continent) %&gt;%\n  summarise(mean = mean(lifeExp))\n\n# A tibble: 5 × 2\n  continent  mean\n  &lt;fct&gt;     &lt;dbl&gt;\n1 Africa     54.8\n2 Americas   73.6\n3 Asia       70.7\n4 Europe     77.6\n5 Oceania    80.7"
+  },
+  {
+    "objectID": "slides/week-07/07-datatransform_dataviz.html#grammar-of-graphics",
+    "href": "slides/week-07/07-datatransform_dataviz.html#grammar-of-graphics",
+    "title": "Data transformation & visualization",
+    "section": "Grammar of graphics",
+    "text": "Grammar of graphics\nIn general:\n\nggplot(data = DATA) +\n  GEOM_FUNCTION(mapping = aes(AESTHETIC MAPPINGS))\n\n\nFor our Gapminder data:\n\nggplot(data = gapminder) +\n  geom_point(mapping = aes(x = gdpPercap,\n                           y = lifeExp,\n                           color = continent))"
+  },
+  {
+    "objectID": "slides/week-07/07-datatransform_dataviz.html#mapping-data-to-aesthetics",
+    "href": "slides/week-07/07-datatransform_dataviz.html#mapping-data-to-aesthetics",
+    "title": "Data transformation & visualization",
+    "section": "Mapping data to aesthetics",
+    "text": "Mapping data to aesthetics\n\nMapping health and wealthCodeOutput\n\n\n\n\n\nData\nAesthetics - aes()\nGeometry - geom\n\n\n\n\nWealth (GDP per capita)\nx\ngeom_point\n\n\nHealth (Life expectancy)\ny\ngeom_point\n\n\nContinent\ncolor\ngeom_point\n\n\n\n\n\n\nggplot(data = gapminder %&gt;% filter(year==2007)) +\n  geom_point(mapping = aes(x = gdpPercap,\n                           y = lifeExp,\n                           color = continent))\n\n\n\n\nggplot(data = gapminder %&gt;% filter(year==2007)) +\n  geom_point(mapping = aes(x = gdpPercap,\n                           y = lifeExp,\n                           color = continent))"
+  },
+  {
+    "objectID": "slides/week-07/07-datatransform_dataviz.html#health-and-wealth",
+    "href": "slides/week-07/07-datatransform_dataviz.html#health-and-wealth",
+    "title": "Data transformation & visualization",
+    "section": "Health and wealth",
+    "text": "Health and wealth\n\nggplot(data = gapminder %&gt;% filter(year==2007)) +\n  geom_point(mapping = aes(x = gdpPercap,\n                           y = lifeExp,\n                           color = continent,\n                           size = pop)) +\n  scale_x_log10()"
+  },
+  {
+    "objectID": "slides/week-07/07-datatransform_dataviz.html#grammatical-layers",
+    "href": "slides/week-07/07-datatransform_dataviz.html#grammatical-layers",
+    "title": "Data transformation & visualization",
+    "section": "Grammatical Layers",
+    "text": "Grammatical Layers\n\nFoundationalAdditional"
+  },
+  {
+    "objectID": "slides/week-07/07-datatransform_dataviz.html#building-a-ggplot-step-by-step",
+    "href": "slides/week-07/07-datatransform_dataviz.html#building-a-ggplot-step-by-step",
+    "title": "Data transformation & visualization",
+    "section": "Building a ggplot step-by-step",
+    "text": "Building a ggplot step-by-step\n\nPackagesCodeOutput\n\n\nThe following packages are needed to reproduce the plots on the following slides.\n\n# You can install and load them this way:\ninstall.packages(\"pacman\")\n\npacman::p_load(\n  \"dplyr\",       # data transformation & pipe operator\n  \"ggplot2\",     # plot data\n  \"gapminder\",   # access gapminder data\n  \"viridis\"      # color schemes for our plots\n)\n\n\n\n\nggplot(data = gapminder %&gt;% filter(year==2007),\n  aes(x = gdpPercap, \n      y = lifeExp,\n      color = continent))"
+  },
+  {
+    "objectID": "slides/week-07/07-datatransform_dataviz.html#building-a-ggplot-step-by-step-1",
+    "href": "slides/week-07/07-datatransform_dataviz.html#building-a-ggplot-step-by-step-1",
+    "title": "Data transformation & visualization",
+    "section": "Building a ggplot step-by-step",
+    "text": "Building a ggplot step-by-step\n\nCodeOutput\n\n\nAdd points as geometry using geom_point():\n\nggplot(data = gapminder %&gt;% filter(year==2007),\n  aes(x = gdpPercap, \n      y = lifeExp,\n      color = continent)) +\n  geom_point()"
+  },
+  {
+    "objectID": "slides/week-07/07-datatransform_dataviz.html#building-a-ggplot-step-by-step-2",
+    "href": "slides/week-07/07-datatransform_dataviz.html#building-a-ggplot-step-by-step-2",
+    "title": "Data transformation & visualization",
+    "section": "Building a ggplot step-by-step",
+    "text": "Building a ggplot step-by-step\n\nCodeOutput\n\n\nAdd a scale:\n\nggplot(data = gapminder %&gt;% filter(year==2007),\n  aes(x = gdpPercap, y = lifeExp,\n      color = continent)) +\n  geom_point() +\n  scale_x_log10()"
+  },
+  {
+    "objectID": "slides/week-07/07-datatransform_dataviz.html#building-a-ggplot-step-by-step-3",
+    "href": "slides/week-07/07-datatransform_dataviz.html#building-a-ggplot-step-by-step-3",
+    "title": "Data transformation & visualization",
+    "section": "Building a ggplot step-by-step",
+    "text": "Building a ggplot step-by-step\n\nCodeOutput\n\n\nAdd a trend line using geom_smooth()\n\nggplot(data = gapminder %&gt;% filter(year==2007),\n  aes(x = gdpPercap, \n      y = lifeExp,\n      color = continent)) +\n  geom_point() +\n  scale_x_log10() +\n  geom_smooth(method = \"lm\")"
+  },
+  {
+    "objectID": "slides/week-07/07-datatransform_dataviz.html#building-a-ggplot-step-by-step-4",
+    "href": "slides/week-07/07-datatransform_dataviz.html#building-a-ggplot-step-by-step-4",
+    "title": "Data transformation & visualization",
+    "section": "Building a ggplot step-by-step",
+    "text": "Building a ggplot step-by-step\n\nCodeOutput\n\n\nAdd different color scale using the viridis package:\n\nggplot(data = gapminder %&gt;% filter(year==2007),\n  aes(x = gdpPercap, \n      y = lifeExp,\n      color = continent)) +\n  geom_point() +\n  scale_x_log10() +\n  geom_smooth(method = \"lm\") +\n  scale_color_viridis_d()"
+  },
+  {
+    "objectID": "slides/week-07/07-datatransform_dataviz.html#building-a-ggplot-step-by-step-5",
+    "href": "slides/week-07/07-datatransform_dataviz.html#building-a-ggplot-step-by-step-5",
+    "title": "Data transformation & visualization",
+    "section": "Building a ggplot step-by-step",
+    "text": "Building a ggplot step-by-step\n\nCodeOutput\n\n\nUse facets:\n\nggplot(data = gapminder %&gt;% filter(year==2007),\n  aes(x = gdpPercap, \n      y = lifeExp,\n      color = continent)) +\n  geom_point() +\n  scale_x_log10() +\n  geom_smooth(method = \"lm\") +\n  scale_color_viridis_d() +\n  facet_wrap(vars(continent), ncol = 2)"
+  },
+  {
+    "objectID": "slides/week-07/07-datatransform_dataviz.html#building-a-ggplot-step-by-step-6",
+    "href": "slides/week-07/07-datatransform_dataviz.html#building-a-ggplot-step-by-step-6",
+    "title": "Data transformation & visualization",
+    "section": "Building a ggplot step-by-step",
+    "text": "Building a ggplot step-by-step\n\nCodeOutput\n\n\nAdd titles, subtitles, labels, and captions:\n\nggplot(data = gapminder %&gt;% filter(year==2007),\n  aes(x = gdpPercap, y = lifeExp, color = continent)) +\n  geom_point() +\n  scale_x_log10() +\n  geom_smooth(method = \"lm\") +\n  scale_color_viridis_d() +\n  facet_wrap(vars(continent), ncol = 2) +\n  labs(x = \"GDP per capita\", y = \"Life expectancy\", \n       color = \"Continent\",\n       title = \"Wealth = Health?\", subtitle = \"gdpPercap/lifeExp\", \n       caption = \"Gapminder dataset\")"
+  },
+  {
+    "objectID": "slides/week-07/07-datatransform_dataviz.html#building-a-ggplot-step-by-step-7",
+    "href": "slides/week-07/07-datatransform_dataviz.html#building-a-ggplot-step-by-step-7",
+    "title": "Data transformation & visualization",
+    "section": "Building a ggplot step-by-step",
+    "text": "Building a ggplot step-by-step\n\nCodeOutput\n\n\nAdd a theme:\n\nggplot(data = gapminder %&gt;% filter(year==2007),\n  aes(x = gdpPercap, y = lifeExp, color = continent)) +\n  geom_point() +\n  scale_x_log10() +\n  geom_smooth(method = \"lm\") +\n  scale_color_viridis_d() +\n  facet_wrap(vars(continent), ncol = 2) +\n  labs(x = \"GDP per capita\", y = \"Life expectancy\", \n       color = \"Continent\",\n       title = \"Wealth = Health?\", subtitle = \"gdpPercap/lifeExp\", \n       caption = \"Gapminder dataset\") +\n  theme_minimal()"
+  },
+  {
+    "objectID": "slides/week-07/07-datatransform_dataviz.html#building-a-ggplot-step-by-step-8",
+    "href": "slides/week-07/07-datatransform_dataviz.html#building-a-ggplot-step-by-step-8",
+    "title": "Data transformation & visualization",
+    "section": "Building a ggplot step-by-step",
+    "text": "Building a ggplot step-by-step\n\nCodeOutput\n\n\nThere are many themes. Have a look here.\n\nggplot(data = gapminder %&gt;% filter(year==2007),\n  aes(x = gdpPercap, y = lifeExp, color = continent)) +\n  geom_point() +\n  scale_x_log10() +\n  geom_smooth(method = \"lm\") +\n  scale_color_viridis_d() +\n  facet_wrap(vars(continent), ncol = 2) +\n  labs(x = \"GDP per capita\", y = \"Life expectancy\", \n       color = \"Continent\",\n       title = \"Wealth = Health?\", subtitle = \"gdpPercap/lifeExp\", \n       caption = \"Gapminder dataset\") +\n  theme_dark()"
+  },
+  {
+    "objectID": "slides/week-07/07-datatransform_dataviz.html#building-a-ggplot-step-by-step-9",
+    "href": "slides/week-07/07-datatransform_dataviz.html#building-a-ggplot-step-by-step-9",
+    "title": "Data transformation & visualization",
+    "section": "Building a ggplot step-by-step",
+    "text": "Building a ggplot step-by-step\n\nCodeOutput\n\n\nOther geometries: Histograms\n\nggplot(data = filter(gapminder, year %in% c(2007)),\naes(x = lifeExp, \n    fill = continent)) +\ngeom_histogram(binwidth = 5, \n               color = \"grey\") +\nscale_fill_viridis_d() +\nfacet_wrap(vars(continent), \n           ncol = 2) +\nguides(fill = \"none\") +\ntheme_minimal()"
+  },
+  {
+    "objectID": "slides/week-07/07-datatransform_dataviz.html#building-a-ggplot-step-by-step-10",
+    "href": "slides/week-07/07-datatransform_dataviz.html#building-a-ggplot-step-by-step-10",
+    "title": "Data transformation & visualization",
+    "section": "Building a ggplot step-by-step",
+    "text": "Building a ggplot step-by-step\n\nCodeOutput\n\n\nOther geometries: Box plots\n\ncolors &lt;- c(\"red\", \"orange\", \"yellow\", \"green\", \"blue\")\n\nggplot(data = filter(gapminder, year %in% c(2007)),\n  aes(x = continent, \n      y = lifeExp,\n      fill = continent)) +\n  geom_boxplot(alpha = 0.5) +\n  scale_fill_manual(values = colors) +\n  guides(fill = \"none\") +\n  theme_minimal()"
+  },
+  {
+    "objectID": "slides/week-07/07-datatransform_dataviz.html#building-a-ggplot-step-by-step-11",
+    "href": "slides/week-07/07-datatransform_dataviz.html#building-a-ggplot-step-by-step-11",
+    "title": "Data transformation & visualization",
+    "section": "Building a ggplot step-by-step",
+    "text": "Building a ggplot step-by-step\n\nCodeOutput\n\n\nOther geometries: Line plots\n\nggplot(gapminder, aes(x = year, y = lifeExp, group = country)) +\n  geom_line(alpha = 0.2, color= \"grey\") +\n  geom_line(data = gapminder %&gt;%\n    filter(country %in% c(\n    \"Germany\",\n    \"India\",\n    \"Rwanda\")),\n    lwd = 1, color = \"red\") + \n  theme_minimal()"
+  },
+  {
+    "objectID": "slides/week-07/07-datatransform_dataviz.html#until-our-next-session-1",
+    "href": "slides/week-07/07-datatransform_dataviz.html#until-our-next-session-1",
+    "title": "Data transformation & visualization",
+    "section": "Until our next session",
+    "text": "Until our next session\n\nIn generalExpectationsGroups\n\n\n\n4 groups, 10-12 minutes of presentation, 15 minutes of discussion\nPrepare a powerpoint presentation. Send me at least an outline until November 27, 11:30 am.\nParticipate in discussion of other presentations\nTopics can include: Democratic backsliding, the political impact of radical right populist parties, cleavage politics (e.g., young vs. old, rural vs. urban, …)\n\n\n\nIn your presentation, you should demonstrate your understanding of the materials covered so far.\n\n\n\n\n\n\n\nYour presentation should cover the following:\n\nResearch question\nTheory & research design\n\nExpectation, causal mechanism, assumptions, scope?\nCan you cross the four hurdles?\nType of research design\n\nMeasurement strategy\n\nHow do you operationalize your concepts?\n\nPossible datasets / databases\n\n\n\n\n\n\n\n\nGroup 1: Jakub Bieniek, Ying-Fan Chen, Maria Michelaki\nGroup 2: Josef Galli, Elias Latta,Bernadett Neszt\nGroup 3: Daniel Saath, Daniel Schatzer\nGroup 4: Matthias Lung, Anna-Maria Egger"
+  },
+  {
+    "objectID": "slides/week-07/07-datatransform_dataviz.html#reminder-how-to-install-r-rstudio",
+    "href": "slides/week-07/07-datatransform_dataviz.html#reminder-how-to-install-r-rstudio",
+    "title": "Data transformation & visualization",
+    "section": "Reminder: How to install R & RStudio",
+    "text": "Reminder: How to install R & RStudio\n\n\n\n\nYou can find the website [here](https://posit.co/download/rstudio-desktop/)."
+  },
+  {
+    "objectID": "slides/week-07/07-datatransform_dataviz.html#pipes",
+    "href": "slides/week-07/07-datatransform_dataviz.html#pipes",
+    "title": "Data transformation & visualization",
+    "section": "Pipes",
+    "text": "Pipes\nUsually, in R we apply functions as follows:\n\nf(x)\n\nIn the logic of pipes this function is written as:\n\nx %&gt;% f(.)\n\nHere, object x is piped into function f, becoming (by default) its first argument. We can use pipes with more than one function, too:\n\nx %&gt;% \n  f_1() %&gt;% \n  f_2() %&gt;% \n  f_3()"
+  },
+  {
+    "objectID": "slides/week-07/07-datatransform_dataviz.html#back-to-gapminder-the-tidyverse",
+    "href": "slides/week-07/07-datatransform_dataviz.html#back-to-gapminder-the-tidyverse",
+    "title": "Data transformation & visualization",
+    "section": "Back to Gapminder & the tidyverse",
+    "text": "Back to Gapminder & the tidyverse\nThe tidyverse examples in the following will make use of functions from the dplyr package:\n\ndplyr functions are verbs that signal an action\nfirst argument is always the a data frame\nthe output is also (normally) a data frame (tibble)\ncolumns (= variables in a tidy data frame) can be referenced without quotation marks (non-standard evaluation)\nactions (verbs) can be applied to columns (variables) and rows (cases/observations)"
+  },
+  {
+    "objectID": "slides/week-07/07-datatransform_dataviz.html#dplyrselect---range-of-variables",
+    "href": "slides/week-07/07-datatransform_dataviz.html#dplyrselect---range-of-variables",
+    "title": "Data transformation & visualization",
+    "section": "dplyr::select - Range of variables",
+    "text": "dplyr::select - Range of variables\n\n\n\ngapminder_lifeExp_1 &lt;- gapminder %&gt;%\n  select(country: lifeExp)\n\n\n\n# A tibble: 1,704 × 4\n   country     continent  year lifeExp\n   &lt;fct&gt;       &lt;fct&gt;     &lt;int&gt;   &lt;dbl&gt;\n 1 Afghanistan Asia       1952    28.8\n 2 Afghanistan Asia       1957    30.3\n 3 Afghanistan Asia       1962    32.0\n 4 Afghanistan Asia       1967    34.0\n 5 Afghanistan Asia       1972    36.1\n 6 Afghanistan Asia       1977    38.4\n 7 Afghanistan Asia       1982    39.9\n 8 Afghanistan Asia       1987    40.8\n 9 Afghanistan Asia       1992    41.7\n10 Afghanistan Asia       1997    41.8\n# ℹ 1,694 more rows\n\n\n\n\ngapminder_lifeExp_2 &lt;- gapminder %&gt;%\n  select(1:4)\n\n\n\n# A tibble: 1,704 × 4\n   country     continent  year lifeExp\n   &lt;fct&gt;       &lt;fct&gt;     &lt;int&gt;   &lt;dbl&gt;\n 1 Afghanistan Asia       1952    28.8\n 2 Afghanistan Asia       1957    30.3\n 3 Afghanistan Asia       1962    32.0\n 4 Afghanistan Asia       1967    34.0\n 5 Afghanistan Asia       1972    36.1\n 6 Afghanistan Asia       1977    38.4\n 7 Afghanistan Asia       1982    39.9\n 8 Afghanistan Asia       1987    40.8\n 9 Afghanistan Asia       1992    41.7\n10 Afghanistan Asia       1997    41.8\n# ℹ 1,694 more rows"
+  },
+  {
+    "objectID": "slides/week-07/07-datatransform_dataviz.html#dplyrselect---unselect-variables",
+    "href": "slides/week-07/07-datatransform_dataviz.html#dplyrselect---unselect-variables",
+    "title": "Data transformation & visualization",
+    "section": "dplyr::select - Unselect variables",
+    "text": "dplyr::select - Unselect variables\n\ngapminder %&gt;%\n  select(-c(continent, lifeExp, gdpPercap))\n\n# A tibble: 1,704 × 3\n   country      year      pop\n   &lt;fct&gt;       &lt;int&gt;    &lt;int&gt;\n 1 Afghanistan  1952  8425333\n 2 Afghanistan  1957  9240934\n 3 Afghanistan  1962 10267083\n 4 Afghanistan  1967 11537966\n 5 Afghanistan  1972 13079460\n 6 Afghanistan  1977 14880372\n 7 Afghanistan  1982 12881816\n 8 Afghanistan  1987 13867957\n 9 Afghanistan  1992 16317921\n10 Afghanistan  1997 22227415\n# ℹ 1,694 more rows"
+  },
+  {
+    "objectID": "slides/week-07/07-datatransform_dataviz.html#select-and-rename-in-one-step",
+    "href": "slides/week-07/07-datatransform_dataviz.html#select-and-rename-in-one-step",
+    "title": "Data transformation & visualization",
+    "section": "Select and rename in one step",
+    "text": "Select and rename in one step\n\ngapminder_new &lt;- gapminder %&gt;% \n  select(Country = country, \n  Continent = continent,\n  Year = year,\n  LifeExp = lifeExp,\n  Population = pop)\n\nnames(gapminder_new)\n\n[1] \"Country\"    \"Continent\"  \"Year\"       \"LifeExp\"    \"Population\""
+  },
+  {
+    "objectID": "slides/week-07/07-datatransform_dataviz.html#measurement-metrics",
+    "href": "slides/week-07/07-datatransform_dataviz.html#measurement-metrics",
+    "title": "Data transformation & visualization",
+    "section": "Measurement metrics",
+    "text": "Measurement metrics\nSo far, we have discussed different ways to measure variables.\nNow, we want to know what types of values variables can have: its measurement metric.\nThere are three important types:\n\ncategorial variables\nordinal variables\ncontinuous variables"
+  },
+  {
+    "objectID": "slides/week-07/07-datatransform_dataviz.html#categorial-variables",
+    "href": "slides/week-07/07-datatransform_dataviz.html#categorial-variables",
+    "title": "Data transformation & visualization",
+    "section": "Categorial variables",
+    "text": "Categorial variables\n\n\n\n\n\n\nIn brief: We can categorize individual cases based on their values, but we cannot apply any ranking or ordering.\n\n\n\nExample: Religious identification.\n\nPossible values: “Catholic”, “Muslim”, “nonreligious”\n\nCan you come up with an example for a categorial variable?\n\n\n\n\n\n\nPopular ways to visualize categorial variables include:\n\nBar plots\nBoxplots"
+  },
+  {
+    "objectID": "slides/week-07/07-datatransform_dataviz.html#ordinal-variables",
+    "href": "slides/week-07/07-datatransform_dataviz.html#ordinal-variables",
+    "title": "Data transformation & visualization",
+    "section": "Ordinal variables",
+    "text": "Ordinal variables\n\n\n\n\n\n\nIn brief: We can categorize individual cases based on their values, and we can apply a ranking or ordering.\n\n\n\nExample: Evaluating governments’ limate action\n\nPossible values: “way too much”, “too much”, “exactly right”, “too little”, “way too little”\n\nCan you come up with an example for an ordinal variable?\n\n\n\n\n\n\nPopular ways to visualize ordinal variables include:\n\nBar plots\nBoxplots"
+  },
+  {
+    "objectID": "slides/week-07/07-datatransform_dataviz.html#continuous-variables",
+    "href": "slides/week-07/07-datatransform_dataviz.html#continuous-variables",
+    "title": "Data transformation & visualization",
+    "section": "Continuous variables",
+    "text": "Continuous variables\n\n\n\n\n\n\nIn brief: A variable that has equal unit differences. A one-unit increase or decrease indicates the same amount of change across all values of the variable.\n\n\n\nExample: Age\n\nA one-unit increase is the same for a 21 year old and a 55 year old. He or she is one year older.\n\nCan you come up with an example for a continuous variable?\n\n\n\n\n\n\nPopular ways to visualize continuous variables include:\n\nBar plots & boxplots\nScatterplots & histograms"
+  },
+  {
+    "objectID": "slides/week-07/07-datatransform_dataviz.html#bar-plots---example",
+    "href": "slides/week-07/07-datatransform_dataviz.html#bar-plots---example",
+    "title": "Data transformation & visualization",
+    "section": "Bar plots - Example",
+    "text": "Bar plots - Example\n\n\n\n\nSource: Data to Viz"
+  },
+  {
+    "objectID": "slides/week-07/07-datatransform_dataviz.html#box-plots---example",
+    "href": "slides/week-07/07-datatransform_dataviz.html#box-plots---example",
+    "title": "Data transformation & visualization",
+    "section": "Box plots - Example",
+    "text": "Box plots - Example\n\n\n\n\nSource: Data to Viz"
+  },
+  {
+    "objectID": "slides/week-07/07-datatransform_dataviz.html#scatterplots---example",
+    "href": "slides/week-07/07-datatransform_dataviz.html#scatterplots---example",
+    "title": "Data transformation & visualization",
+    "section": "Scatterplots - Example",
+    "text": "Scatterplots - Example\n\n\n\n\nSource: Data to Viz"
+  },
+  {
+    "objectID": "slides/week-07/07-datatransform_dataviz.html#histograms---example",
+    "href": "slides/week-07/07-datatransform_dataviz.html#histograms---example",
+    "title": "Data transformation & visualization",
+    "section": "Histograms - Example",
+    "text": "Histograms - Example\n\n\n\n\nSource: Data to Viz"
   }
 ]
