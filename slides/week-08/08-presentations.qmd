@@ -1,5 +1,5 @@
 ---
-title: "Student presentations"
+title: "Student presentations & Writing basics"
 subtitle: "Week 8"
 author: "David Schweizer"
 date: "Nov 29, 2023"
@@ -13,4 +13,312 @@ format:
 editor: visual
 ---
 
-# TBA
+## Plan for today
+
+::: panel-tabset
+## Part I
+
+-   **Student presentations**
+
+## Break
+
+⏸️ **15 minute break:** Get some fresh air, coffee, ...
+
+## Part II
+
+-   **Academic writing**
+
+    -   Basics
+    -   Tips
+    -   Citations
+:::
+
+# Student presentations
+
+# ⏸️ 15 minute break
+
+# ▶️ Academic writing
+
+## How to learn to write
+
+Today:
+
+-   Basics & tips
+
+Your turn:
+
+-   Read, write, read, write, ...
+
+::: {.callout-tip appearance="simple"}
+## Sport metaphor
+
+Important to know the rules of the game, but equally important to learn from others (= read published articles) and practice on your own (= writing) to get better.
+:::
+
+## Different types of writing
+
+::: panel-tabset
+## Preparation
+
+![](man-593333__480.jpg){width="762"}
+
+## Actual writing process
+
+![](woman-3687084__480.jpg){width="675"}
+:::
+
+## Structure of an article
+
+![](Bild1.png)
+
+## Structure of an article
+
+-   Give the individual sections an subsections (especially in the literature review and theory, but also for method and analysis) meaningful titles
+
+-   For example: *Slothuus, R., & Bisgaard, M. (2021). How political parties shape public opinion in the real world. American Journal of Political Science, 65(4), 896-911*.
+
+    -   Literature: *Party Influence in Experimental and Real-World Settings*
+
+    -   Analysis (subsection): *Do Citizens Follow Their Party Regardless of Prior Opinions?*
+
+## Order of writing
+
+-   Do not follow the order in the article when writing! Start with:
+
+    -   Theory
+
+    -   Literature review
+
+    -   Method & Analysis
+
+    -   Conclusion
+
+    -   Introduction
+
+-   Important: Do not finish each part in this order completely before beginning with the next one!
+
+## Theory
+
+-   Goal: An (innovative) explanation for a relevant type of phenomenon. In other words, an answer to the research question.
+
+-   Main components:
+
+    -   Expectations, Causal mechanism, Hypotheses
+
+-   Quality criteria of a good theory section:
+
+    -   Innovative, but: *Standing on the shoulders of giants*
+
+    -   Convincing and consistent: developing the argument step by step
+
+## How to structure the theory
+
+1.  Recapitulation of the argument
+
+2.  The intuition of the argument
+
+3.  Assumptions of the argument
+
+4.  Justification of the main causal relationship
+
+5.  Stylized facts that support the argument
+
+    -   How well the theory works in comparison to competing theories
+
+    -   References to the literature section, which is not yet written
+
+## Literature review
+
+-   Presents as much relevant literature as possible
+
+-   Ignores all (!) irrelevant literature
+
+-   Categorizes the existing literature and evaluates it fairly
+
+-   Creates space for your own argument
+
+-   Reminder: do not just list article by article. How do the individual articles support your theoretical argument?
+
+## How to structure the literature review
+
+1.  Recapitulation of the primary phenomenon of interest
+
+2.  Naming and discussing the organizing criteria of the literature
+
+3.  The first argument presented in the literature
+
+4.  The second argument presented in the literature
+
+5.  \[...\]
+
+6.  Assessment of the relevance of the literature
+
+7.  Identify the gap that your argument fills
+
+## Method
+
+Description of how you test your hypotheses:
+
+-   Operationalization and measurement of the variables
+
+    -   Dependent variable, Independent variable(s), Control variables
+
+-   Case selection: which countries, observation period, ...
+
+    -   Theoretically justified!
+
+    -   Name pragmatic considerations (e.g., limited survey period)
+
+-   Model description and reasoning
+
+## Analysis
+
+Test what you have described before. Components include:
+
+-   Presentation and discussion of the results (with the help of tables and graphics)
+
+    -   Focus on hypotheses
+
+    -   Short: Control variables
+
+-   (Robustness tests)
+
+-   Brief summary: Evidence for your hypothesis?
+
+-   (Interpretation, generalizability -\> more detailed in the final section)
+
+## Conclusion
+
+-   Repeat: question, argument and result
+
+-   Implications: Scientific, real-world, normative
+
+-   Generalizability (limits of own work) and interpretation of the results
+
+-   Future research
+
+## Introduction
+
+-   *Hook*: What is the motivation behind the work, why is it important to to deal with it? Research question?
+
+-   Briefly summarized: Main argument and justification
+
+-   Briefly summarized: how was the argument tested, what is the result? In what way does your work make a contribution?
+
+-   Important: scientific text is not a thriller! You can/should *spoiler* here
+
+-   (Description of the structure, what do you do in the next sections?)
+
+## Why do we need to cite?
+
+-   Remember? *The procedure is public*
+
+-   Replicability
+
+-   Prove statements
+
+-   Respect the thoughts and work of other researchers and identify them as such!
+
+## Cite, paraphrase, reference?
+
+-   Citing: The verbatim, exact reproduction of parts of another text
+
+-   Paraphrasing: The analogous, not literal, reproduction of arguments or ideas.
+
+-   Referencing: Mentioning texts that are relevant but that you rely on less directly
+
+## Types of citations with examples
+
+::: {style="font-size: 60%;"}
+| Type     | Form                   | In Text - Example                 | Footnote        | Bibliography entry - Example                                                    | Usage                                                    |
+|------------|------------|------------|------------|---------------|------------|
+| In Text  | Short                  | Voting is irrational (Downs 1957) | \-              | Downs, Anthony. 1957. *An Economic Theory of Democracy*. New York: Harper & Row | Common in political science. I recommend this type!      |
+| Footnote | Short                  | Voting is irrational$^1$          | $^1$ Downs 1957 | Downs, Anthony. 1957. *An Economic Theory of Democracy*. New York: Harper & Row | Less common, and only in few political science journals. |
+| Footnote | Full first, then Short | Voting is irrational$^1$          | $^1$ Downs 1957 | \-                                                                              | Outdated.                                                |
+:::
+
+## Citation styles
+
+-   There are thousands of citation styles:
+
+    -   Common: *Chicago Manual of Style (author-date)*
+
+    -   I like *APA (American Psychological Association)*
+
+-   Most important: Cite consistently, do not change styles within the text!
+
+-   Citing manually is very tedious. Use respective software: e.g., Zotero!
+
+## Citation example
+
+-   "It should be stated flatly at the outset that this volume is devoted to the thesis that the political parties created democracy and that modern democracy is unthinkable save in terms of the parties" (Schattschneider 1944, 1)
+
+-   As Schattschneider argues, „political parties created democracy and \[...\] modern democracy is unthinkable save in terms of the parties" (1944, 1)
+
+## It is best to be concise!
+
+-   Usually: Do not include first names, universities, book or article titles in your text! All the relevant information is already in the bibliography.
+
+-   For example:
+
+    -   In his 1957 book, „An Economic Theory of Democracy," Anthony Downs argues ...
+
+    -   In his 1957 book, Anthony Downs argues ...
+
+    -   In his book, Downs (1957) argues ...
+
+    -   Downs (1957) argues ...
+
+## Plagiarism
+
+-   Not always obvious: even if you reproduce the content of another person's text (not verbatim), this is plagiarism
+
+-   No one will accuse you of fraud if you forget to cite a source for a statement a statement - but beware of plagiarism!
+
+-   Even "recycling" your own ideas without labeling them (e.g. parts of a BA thesis in MA thesis) is (self-)plagiarism
+
+-   Plagiarism is morally reprehensible but also legally fraudulent - avoid it avoid it, cite correctly from the start and provide evidence for your statements!
+
+# Applied example: Zotero
+
+# Your turn!
+
+## Exercise: Zotero
+
+-   If not done so yet: Download Zotero
+
+-   Download the extension *Zotero Connector* for your browser
+
+-   Save a article + PDF to Zotero using the extension
+
+-   Cite it in different ways using Zotero in Word!
+
+    -   Choose different styles
+
+    -   Create a bibliography
+
+    -   Cite without author names
+
+-   You can find extensive information [here](https://www.zotero.org/support/).
+
+## Until our next session
+
+::: panel-tabset
+## Feedback
+
+-   I will also provide you with written feedback regarding your presentations until next week!
+
+## Term paper
+
+-   We will discuss in detail, what exactly the expectations for the term paper are (including a checklist)
+
+## Open questions
+
+-   If you have not understood something throughout the semester and want a little recap, please let me know by Monday before our session.
+
+-   Alternatively, feel free to make an appointment for my office hours.
+:::
+
+# Any open questions?
+
+# See you next week!
