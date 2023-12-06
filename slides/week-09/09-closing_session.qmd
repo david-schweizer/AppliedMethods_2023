@@ -13,4 +13,12 @@ format:
 editor: visual
 ---
 
-# TBA
+## No session today due to illness
+
+Instead, take the time to:
+
+-   Have a look at the grading scheme and the template. You can find both Word documents on OLAT.
+
+-   As noted in the *grading scheme* document, I highly recommend you to discuss your research idea during my office hours or send me a short draft (bullet points are enough!).
+
+    -   Take the time now to start working on your idea for the term paper.
