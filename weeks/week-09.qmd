@@ -47,10 +47,6 @@ You can find the grading scheme [here](https://lms.uibk.ac.at/url/RepositoryEntr
 # To Do's before our session
 
 ::: panel-tabset
-## Feedback
-
--   I will also provide you with written feedback regarding your presentations until next week!
-
 ## Term paper
 
 -   We will discuss in detail, what exactly the expectations for the term paper are (including a checklist)
